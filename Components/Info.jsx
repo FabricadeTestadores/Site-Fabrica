@@ -5,7 +5,7 @@ export default function Info() {
     <>
       <div id="about" className="info">
         <div className="logo">
-          <img src="/public/logo_fabrica.png" alt="Logo Fábrica de Testadores" />
+          <img src="/logo_fabrica.png" alt="Logo Fábrica de Testadores" />
         </div>
         <div className="text-content">
           <p>
