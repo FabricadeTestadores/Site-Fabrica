@@ -187,7 +187,7 @@ export default function Team() {
                 />
               </div>
               <div className="member-info">
-                <h3 className="member-name">HIDELBRANDO ISRAEL</h3>
+                <h3 className="member-name">HILDEBRANDO ISRAEL</h3>
                 <div className="member-social">
                   <a href="https://www.linkedin.com/in/hildebrando-israel/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
                     <img src="/linkedin-icon.svg" alt="LinkedIn" />
