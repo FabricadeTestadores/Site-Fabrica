@@ -9,7 +9,7 @@ const Events = () => {
       id: 1,
       title: "CTFL 2.0",
       date: "2026",
-      description: "Curso de capacitação em testeste de sogtware para certificação CTFL.",
+      description: "Curso de capacitação em testes de software para certificação CTFL.",
       location: "Youtube / Fabrica de testadores",
     },
   ]
@@ -19,14 +19,14 @@ const Events = () => {
       id: 2,
       title: "Introdução a Teste de Segurança",
       date: "2025",
-      description: "Minicurso apresentando uma introdução ao testes de segurança e a aplicação de CTF(Capture The Flag).",
+      description: "Minicurso apresentando uma introdução aos testes de segurança e a aplicação de CTF (Capture The Flag).",
       location: "LABCOMP - UECE",
     },
     {
       id: 3,
       title: "CTFL",
       date: "2025",
-      description: "A Curso de capacitação em testeste de sogtware para certificação CTFL.",
+      description: "Curso de capacitação em testes de software para certificação CTFL.",
       location: "Youtube - Fabrica de Testadores",
     },
     {
