@@ -1,7 +1,6 @@
-import React from 'react';
-import Navbar from '../Components/Navbar';
-import Services from '../Components/Services';
-import Footer from '../Components/Footer';
+import Navbar from '../src/Components/Navbar';
+import Services from '../src/Components/Services';
+import Footer from '../src/Components/Footer';
 
 export default function Servico() {
   return (

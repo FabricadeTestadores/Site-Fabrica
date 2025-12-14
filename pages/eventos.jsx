@@ -1,7 +1,6 @@
-import React from 'react';
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
-import Events from '../Components/Events';
+import Navbar from '../src/Components/Navbar';
+import Footer from '../src/Components/Footer';
+import Events from '../src/Components/Events';
 
 export default function Eventos() {
   return (

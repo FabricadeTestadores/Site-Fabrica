@@ -1,6 +1,6 @@
-import Navbar from '../Components/Navbar';
-import Articles from '../Components/Articles';
-import Footer from '../Components/Footer';
+import Navbar from '../src/Components/Navbar';
+import Articles from '../src/Components/Articles';
+import Footer from '../src/Components/Footer';
 
 export default function Artigos() {
   return (
