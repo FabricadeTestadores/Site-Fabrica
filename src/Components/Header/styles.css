@@ -1,4 +1,4 @@
-@import url("../src/App.css");
+@import url("../../App.css");
 
 
 .header {
@@ -142,7 +142,7 @@
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .main-logo {
     height: 120px;
   }
@@ -153,11 +153,11 @@
     height: 90vh;
     padding-top: 40px;
   }
-  
+
   .header-container {
     padding: 0 1.5rem;
   }
-  
+
   .institution-logos-container {
     position: static;
     margin-bottom: 2rem;
@@ -171,24 +171,24 @@
     justify-content: space-between;
     width: 100%;
   }
-  
+
   .inst-logo {
     height: 40px;
   }
-  
+
   .hero-title {
     font-size: 3rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.3rem;
     letter-spacing: 1px;
   }
-  
+
   .hero-description {
     font-size: 1.1rem;
   }
-  
+
   .main-logo {
     height: 100px;
   }
@@ -199,11 +199,11 @@
     height: 85vh;
     padding-top: 20px;
   }
-  
+
   .header-container {
     padding: 0 1rem;
   }
-  
+
   .institution-logos-container {
     padding: 0.6rem 0.8rem;
     border-radius: 12px;
@@ -214,23 +214,23 @@
     width: 100%;
     gap: 1rem;
   }
-  
+
   .inst-logo {
     height: 35px;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .hero-description {
     font-size: 1rem;
   }
-  
+
   .main-logo {
     height: 80px;
   }

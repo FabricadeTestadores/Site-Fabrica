@@ -1,16 +1,16 @@
-import "./Header.css";
+import "./styles.css";
 
 export default function Header() {
   return (
     <header id="home" className="header">
-      
+
       <img src="/Background.jpg" alt="Background" className="header-bg" />
       <div className="header-overlay"></div>
 
-      
+
       <div className="header-container">
-        
-      
+
+
         <div className="institution-logos-container">
           <div className="institution-logos">
             <a href="https://www.uece.br/" target="_blank" rel="noopener noreferrer">
@@ -22,12 +22,12 @@ export default function Header() {
           </div>
         </div>
 
-        
+
         <div className="hero-section">
           <div className="logo-section">
             <img src="/logo_fabrica-removebg-preview.png" alt="Fábrica de Testadores" className="main-logo" />
           </div>
-          
+
           <div className="text-section">
             <h1 className="hero-title">FÁBRICA DE TESTADORES</h1>
             <p className="hero-subtitle">Projeto de Extensão Universitária</p>

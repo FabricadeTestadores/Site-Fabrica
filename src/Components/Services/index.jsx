@@ -1,5 +1,4 @@
-import React from 'react'
-import './Services.css'
+import './styles.css'
 
 const Services = () => {
   const services = [
@@ -19,15 +18,15 @@ const Services = () => {
       id: 3,
       title: 'Detic',
       date: '2025',
-        description: 'Foi realizado um processo de testes funcionais e exploratórios no novo módulo de Atividades Complementares (AC) do sistema acadêmico desenvolvido pelo DETIC/UECE. A atividade foi conduzida pela equipe da Fábrica de Testadores (GESAD/UECE) sob orientação docente, com o objetivo de identificar falhas antes do lançamento oficial da atualização do sistema.'
-      },
+      description: 'Foi realizado um processo de testes funcionais e exploratórios no novo módulo de Atividades Complementares (AC) do sistema acadêmico desenvolvido pelo DETIC/UECE. A atividade foi conduzida pela equipe da Fábrica de Testadores (GESAD/UECE) sob orientação docente, com o objetivo de identificar falhas antes do lançamento oficial da atualização do sistema.'
+    },
     {
       id: 4,
       title: 'Chatbot Hospital Veterinario UECE',
       date: '2024',
       description: 'O Chatbot UECE passou por validações realizadas pela equipe de Quality Assurance, que identificou diferentes problemas de funcionamento durante interações via WhatsApp. Entre os achados, destacam-se falhas em respostas de despedida e agradecimento, limitações na lematização que impedem o reconhecimento de sinônimos e variações de intenção, ausência de opções de navegação para retornar ao menu após acessar informações de cirurgias e mensagens genéricas na área de pagamentos, dificultando o entendimento do usuário.'
     },
-     {
+    {
       id: 5,
       title: 'Bookstation',
       date: '2024',

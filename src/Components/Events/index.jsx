@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import './Events.css'
+import { useState } from 'react'
+import './styles.css'
 
 const Events = () => {
   const [activeTab, setActiveTab] = useState('upcoming')
@@ -42,7 +42,7 @@ const Events = () => {
       date: "2024",
       description: "Curso introdutório sobre conceitos e técnicas de testes manuais em software.",
       location: "LABCOMP - UECE",
-    }, 
+    },
     {
       id: 6,
       title: "Testes Unitários e Testes de API",
@@ -57,24 +57,24 @@ const Events = () => {
 
   return (
     <div className="events-container">
-        <div className="events-header">
-          <h2>Eventos</h2>
-        </div>
+      <div className="events-header">
+        <h2>Eventos</h2>
+      </div>
       <div className="events-tabs">
-        <button 
+        <button
           className={`tab-button ${activeTab === 'upcoming' ? 'active' : ''}`}
           onClick={() => setActiveTab('upcoming')}
         >
           Próximos Eventos
         </button>
-        <button 
+        <button
           className={`tab-button ${activeTab === 'past' ? 'active' : ''}`}
           onClick={() => setActiveTab('past')}
         >
           Eventos Passados
         </button>
       </div>
-      
+
       <div className="events-grid">
         {currentEvents.map((event) => (
           <div key={event.id} className="event-card">

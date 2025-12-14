@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "./styles.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        
+
         <ul className={`navbar-menu ${isMenuOpen ? "active" : ""}`}>
           <li className="navbar-item">
             <Link to="/" className="navbar-link" onClick={closeMenu}>
@@ -39,7 +39,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        
+
         <div
           className={`navbar-hamburger ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}

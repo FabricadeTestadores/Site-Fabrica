@@ -1,5 +1,4 @@
-import React from 'react'
-import './Articles.css'
+import './styles.css'
 
 const Articles = () => {
   const articles = [

@@ -1,4 +1,4 @@
-import "./Objectives.css";
+import "./styles.css";
 
 export default function Objectives() {
   return (
@@ -13,7 +13,7 @@ export default function Objectives() {
           <div className="objective-item">
             <span className="objective-number">01.</span>
             <p className="objective-textOne">
-               Promover a formação de recursos humanos.
+              Promover a formação de recursos humanos.
             </p>
           </div>
 

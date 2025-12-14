@@ -1,12 +1,11 @@
-@import url("../src/App.css");
+@import url("../../App.css");
 
 .info {
   display: flex;
   align-items: center;
   padding: 1rem 0 0 0;
   gap: 2rem;
-  font-family: var(--fonte-secundaria
-  );
+  font-family: var(--fonte-secundaria);
   max-width: 1400px;
   margin: 0 auto;
 }
