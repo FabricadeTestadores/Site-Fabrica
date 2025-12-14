@@ -23,7 +23,13 @@ export default function Info() {
             qualidade geral e o sucesso do software.
           </p>
           <p>
-            Alinhado aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU, especialmente as metas 4.3 e 4.4, o projeto busca promover a igualdade de acesso à educação técnica, profissional e superior de qualidade, garantindo oportunidades a preços acessíveis para todos. Além disso, visa ampliar o número de jovens e adultos com competências técnicas e profissionais relevantes, contribuindo para o emprego, o trabalho decente e o empreendedorismo até 2030.
+            Alinhado aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU,
+            especialmente as metas 4.3 e 4.4, o projeto busca promover a igualdade
+            de acesso à educação técnica, profissional e superior de qualidade,
+            garantindo oportunidades a preços acessíveis para todos. Além disso,
+            visa ampliar o número de jovens e adultos com competências técnicas e
+            profissionais relevantes, contribuindo para o emprego, o trabalho decente
+            e o empreendedorismo até 2030.
           </p>
         </div>
       </section>
