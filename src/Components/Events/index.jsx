@@ -1,57 +1,10 @@
 import { useState } from 'react'
+import pastEvents from '../../content/events/pastEvents.json'
+import upcomingEvents from '../../content/events/upcomingEvents.json'
 import './styles.css'
 
 const Events = () => {
   const [activeTab, setActiveTab] = useState('upcoming')
-
-  const upcomingEvents = [
-    {
-      id: 1,
-      title: "CTFL 2.0",
-      date: "2026",
-      description: "Curso de capacitação em testes de software para certificação CTFL.",
-      location: "Youtube / Fabrica de testadores",
-    },
-  ]
-
-  const pastEvents = [
-    {
-      id: 2,
-      title: "Introdução a Teste de Segurança",
-      date: "2025",
-      description: "Minicurso apresentando uma introdução aos testes de segurança e a aplicação de CTF (Capture The Flag).",
-      location: "LABCOMP - UECE",
-    },
-    {
-      id: 3,
-      title: "CTFL",
-      date: "2025",
-      description: "Curso de capacitação em testes de software para certificação CTFL.",
-      location: "Youtube - Fabrica de Testadores",
-    },
-    {
-      id: 4,
-      title: "Testes Exploratórios",
-      date: "2024",
-      description: "Apresentação dos conceitos e práticas de testes exploratórios em software.",
-      location: "LABCOMP - UECE",
-    },
-    {
-      id: 5,
-      title: "Testes Manuais",
-      date: "2024",
-      description: "Curso introdutório sobre conceitos e técnicas de testes manuais em software.",
-      location: "LABCOMP - UECE",
-    },
-    {
-      id: 6,
-      title: "Testes Unitários e Testes de API",
-      date: "2024",
-      description: "Curso introdutório sobre testes unitários e testes de API.",
-      location: "LABCOMP - UECE",
-
-    },
-  ]
 
   const currentEvents = activeTab === 'upcoming' ? upcomingEvents : pastEvents
 
@@ -86,9 +39,9 @@ const Events = () => {
             </div>
             <p className="event-description">{event.description}</p>
             {/* BOTAO PARA INSCRICAO */}
-            {/* {activeTab === 'upcoming' && (
-              <button className="event-button">Inscrever-se</button>
-            )} */}
+            {activeTab === 'upcoming' && (
+              <button className="event-button" disabled>Inscrever-se</button>
+            )}
           </div>
         ))}
       </div>
