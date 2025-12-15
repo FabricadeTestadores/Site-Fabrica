@@ -1,0 +1,163 @@
+@import url("../../App.css");
+
+.contacts {
+  background: var(--preto);
+  padding: 4rem 0;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-container {
+  max-width: 62.5rem;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacts-title {
+  font-family: var(--terceira-fonte);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--cor-principal);
+  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contacts-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.contact-icon {
+  width: 4.175rem;
+  height: 4.175rem;
+  color: var(--cor-principal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-link {
+  font-family: var(--quinta-fonte);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--cor-principal);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.contact-link:hover {
+  color: var(--laranja);
+  border-bottom-color: var(--laranja);
+}
+
+.contact-address {
+  font-family: var(--quinta-fonte);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--cor-principal);
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .contacts-title {
+    font-size: 3.5rem;
+  }
+
+  .contact-link {
+    font-size: 1.8rem;
+  }
+
+  .contact-address {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 3rem 0;
+  }
+
+  .contacts-title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .contacts-content {
+    gap: 3rem;
+  }
+
+  .contact-item {
+    gap: 1.5rem;
+  }
+
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact-link {
+    font-size: 1.5rem;
+  }
+
+  .contact-address {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .contacts-content {
+    gap: 2.5rem;
+  }
+
+  .contact-item {
+    gap: 1rem;
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-link {
+    font-size: 1.2rem;
+  }
+
+  .contact-address {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
