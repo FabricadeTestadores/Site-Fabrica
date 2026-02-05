@@ -1,0 +1,37 @@
+[
+  {
+    "id": 2,
+    "title": "Introdução a Teste de Segurança",
+    "date": "2025",
+    "description": "Minicurso apresentando uma introdução aos testes de segurança e a aplicação de CTF (Capture The Flag).",
+    "location": "LABCOMP - UECE"
+  },
+  {
+    "id": 3,
+    "title": "CTFL",
+    "date": "2025",
+    "description": "Curso de capacitação em testes de software para certificação CTFL.",
+    "location": "Youtube - Fabrica de Testadores"
+  },
+  {
+    "id": 4,
+    "title": "Testes Exploratórios",
+    "date": "2024",
+    "description": "Apresentação dos conceitos e práticas de testes exploratórios em software.",
+    "location": "LABCOMP - UECE"
+  },
+  {
+    "id": 5,
+    "title": "Testes Manuais",
+    "date": "2024",
+    "description": "Curso introdutório sobre conceitos e técnicas de testes manuais em software.",
+    "location": "LABCOMP - UECE"
+  },
+  {
+    "id": 6,
+    "title": "Testes Unitários e Testes de API",
+    "date": "2024",
+    "description": "Curso introdutório sobre testes unitários e testes de API.",
+    "location": "LABCOMP - UECE"
+  }
+]

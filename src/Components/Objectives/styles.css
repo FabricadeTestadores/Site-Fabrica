@@ -1,0 +1,165 @@
+@import url("../../App.css");
+
+.objectives {
+  background: linear-gradient(135deg, #1e4db0 0%, hsl(218, 77%, 37%) 100%);
+  padding: 3rem;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.objectives-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.objectives-title {
+  text-align: center;
+  font-family: var(--terceira-fonte);
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.title-orange {
+  color: var(--cor-principal);
+}
+
+.title-white {
+  color: var(--branco);
+}
+
+.objectives-title span {
+  display: inline;
+}
+
+.objectives-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.objective-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+
+
+.objective-number {
+  color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+  font-size: 2rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.objective-text {
+  color: var(--branco);
+  font-family: var(--fonte-secundaria);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.objective-textOne {
+  color: var(--branco);
+  font-family: var(--fonte-secundaria);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-left: 0.4rem;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .objectives-title {
+    font-size: 3.5rem;
+  }
+
+  .objective-number {
+    font-size: 2.5rem;
+  }
+
+  .objective-text {
+    font-size: 1.3rem;
+  }
+
+  .objective-textOne {
+    font-size: 1.3rem;
+    padding-left: 0.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .objectives {
+    padding: 3rem 0;
+  }
+
+  .objectives-title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    white-space: normal;
+  }
+
+  .objectives-list {
+    gap: 2.5rem;
+  }
+
+  .objective-item {
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .objective-number {
+    font-size: 2rem;
+  }
+
+  .objective-text {
+    font-size: 1.2rem;
+  }
+
+  .objective-textOne {
+    font-size: 1.2rem;
+    padding-left: 0.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .objectives-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .objective-item {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .objective-number {
+    font-size: 1.8rem;
+    align-self: flex-start;
+  }
+
+  .objective-text {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .objective-textOne {
+    font-size: 1.1rem;
+    text-align: left;
+    padding-left: 0;
+  }
+}

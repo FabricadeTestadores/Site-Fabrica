@@ -1,11 +1,10 @@
-import React from 'react';
-import Navbar from '../Components/Navbar';
-import Header from '../Components/Header';
-import Info from '../Components/Info';
-import Objectives from '../Components/Objectives';
-import Performance from '../Components/Performance';
-import Team from '../Components/Team';
-import Footer from '../Components/Footer';
+import Navbar from '../src/Components/Navbar';
+import Header from '../src/Components/Header';
+import Info from '../src/Components/Info';
+import Objectives from '../src/Components/Objectives';
+import Performance from '../src/Components/Performance';
+import Team from '../src/Components/Team';
+import Footer from '../src/Components/Footer';
 
 export default function Homepage() {
   return (
