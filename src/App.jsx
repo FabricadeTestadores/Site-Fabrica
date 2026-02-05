@@ -1,9 +1,9 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Homepage from "../pages/home";
-import Artigos from "../pages/artigos";
-import Eventos from "../pages/eventos";
-import Servico from "../pages/servico";
+import Homepage from "./pages/home";
+import Artigos from "./pages/artigos";
+import Eventos from "./pages/eventos";
+import Servico from "./pages/servico";
 
 function App() {
   return (
