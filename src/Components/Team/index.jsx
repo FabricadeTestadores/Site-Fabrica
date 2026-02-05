@@ -109,23 +109,7 @@ export default function Team() {
         <div className="team-container">
           <div className="carousel-container" ref={containerRef}>
             <div className="members-grid" ref={carouselRef}>
-              {/* Primeira linha */}
-              <div className="member-card">
-                <div className="member-photo">
-                  <img src="/wallison.jpg" alt="Wallison" />
-                </div>
-                <div className="member-info">
-                  <h3 className="member-name">WALLISON AQUINO</h3>
-                  <div className="member-social">
-                    <a href="https://www.linkedin.com/in/wallison-aquino-5ab2931aaq/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
-                      <img src="/linkedin-icon.svg" alt="LinkedIn" />
-                    </a>
-                    <a href="http://lattes.cnpq.br/7204284995879329" target="_blank" rel="noopener noreferrer" className="social-link lattes">
-                      <img src="/Lattes.png" alt="Lattes" />
-                    </a>
-                  </div>
-                </div>
-              </div>
+
 
               <div className="member-card">
                 <div className="member-photo">
@@ -144,80 +128,24 @@ export default function Team() {
                 </div>
               </div>
 
-              <div className="member-card">
+                <div className="member-card">
                 <div className="member-photo">
-                  <img src="/leticia.jpeg" alt="Letícia" />
+                  <img src="/wallison.jpg" alt="Wallison" />
                 </div>
                 <div className="member-info">
-                  <h3 className="member-name">LETÍCIA CARNEIRO</h3>
+                  <h3 className="member-name">WALLISON AQUINO</h3>
                   <div className="member-social">
-                    <a href="https://www.linkedin.com/in/let%C3%ADcia-carneiro-61b50821a/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
+                    <a href="https://www.linkedin.com/in/wallison-aquino-5ab2931aaq/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
                       <img src="/linkedin-icon.svg" alt="LinkedIn" />
                     </a>
-                    <a href="http://lattes.cnpq.br/0529063511031444" target="_blank" rel="noopener noreferrer" className="social-link lattes">
+                    <a href="http://lattes.cnpq.br/7204284995879329" target="_blank" rel="noopener noreferrer" className="social-link lattes">
                       <img src="/Lattes.png" alt="Lattes" />
                     </a>
                   </div>
                 </div>
               </div>
 
-              {/* Segunda linha */}
-              <div className="member-card">
-                <div className="member-photo">
-                  <img src="/wesley.jpg" alt="Wesley" />
-                </div>
-                <div className="member-info">
-                  <h3 className="member-name">WESLEY MACIEL</h3>
-                  <div className="member-social">
-                    <a href="https://www.linkedin.com/in/wesley-maciel-975322170/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
-                      <img src="/linkedin-icon.svg" alt="LinkedIn" />
-                    </a>
-                    <a href="http://lattes.cnpq.br/9741752086582194" target="_blank" rel="noopener noreferrer" className="social-link lattes">
-                      <img src="/Lattes.png" alt="Lattes" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="member-card">
-                <div className="member-photo">
-                  <img
-                    src="/hidelbrando.jpg"
-                    alt="Hidelbrando"
-                  />
-                </div>
-                <div className="member-info">
-                  <h3 className="member-name">HILDEBRANDO ISRAEL</h3>
-                  <div className="member-social">
-                    <a href="https://www.linkedin.com/in/hildebrando-israel/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
-                      <img src="/linkedin-icon.svg" alt="LinkedIn" />
-                    </a>
-                    <a href="http://lattes.cnpq.br/5089004502145919" target="_blank" rel="noopener noreferrer" className="social-link lattes">
-                      <img src="/Lattes.png" alt="Lattes" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="member-card">
-                <div className="member-photo">
-                  <img src="/larissa.jpg" alt="Larissa" />
-                </div>
-                <div className="member-info">
-                  <h3 className="member-name">LARISSA KELLY</h3>
-                  <div className="member-social">
-                    <a href="https://www.linkedin.com/in/lari-kelly/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
-                      <img src="/linkedin-icon.svg" alt="LinkedIn" />
-                    </a>
-                    <a href="http://lattes.cnpq.br/6911951105227474" target="_blank" rel="noopener noreferrer" className="social-link lattes">
-                      <img src="/Lattes.png" alt="Lattes" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Terceira linha - centralizada */}
-              <div className="member-card center-card">
+               <div className="member-card center-card">
                 <div className="member-photo">
                   <img
                     src="/gabriel.jpg"
@@ -236,6 +164,59 @@ export default function Team() {
                   </div>
                 </div>
               </div>
+
+              <div className="member-card">
+                <div className="member-photo">
+                  <img src="/Paulo Matheus.jpeg" alt="Paulo Matheus" />
+                </div>
+                <div className="member-info">
+                  <h3 className="member-name">PAULO MATHEUS</h3>
+                  <div className="member-social">
+                    <a href="https://www.linkedin.com/in/paulo-matheus-barroso-de-vasconcelos-625509301" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
+                      <img src="/linkedin-icon.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="https://lattes.cnpq.br/5386022828155481" target="_blank" rel="noopener noreferrer" className="social-link lattes">
+                      <img src="/Lattes.png" alt="Lattes" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+               
+               <div className="member-card">
+                <div className="member-photo">
+                  <img src="/Kayque Mateus.jpeg" alt="Kayque Mateus" />
+                </div>
+                <div className="member-info">
+                  <h3 className="member-name">KAYQUE MATEUS</h3>
+                  <div className="member-social">
+                    <a href="https://www.linkedin.com/in/kayque-mateus-998b9b22a" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
+                      <img src="/linkedin-icon.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="https://lattes.cnpq.br/6021361563558465" target="_blank" rel="noopener noreferrer" className="social-link lattes">
+                      <img src="/Lattes.png" alt="Lattes" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="member-card">
+                <div className="member-photo">
+                  <img src="/José Fortunato.png" alt="José Fortunato" />
+                </div>
+                <div className="member-info">
+                  <h3 className="member-name">JOSÉ FORTUNATO</h3>
+                  <div className="member-social">
+                    <a href="http://linkedin.com/in/jos%C3%A9-fortunato-39948b320/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
+                      <img src="/linkedin-icon.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="http://lattes.cnpq.br/1569801029764141" target="_blank" rel="noopener noreferrer" className="social-link lattes">
+                      <img src="/Lattes.png" alt="Lattes" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
