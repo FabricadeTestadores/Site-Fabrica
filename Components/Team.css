@@ -15,7 +15,7 @@
 }
 
 .team-container {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
@@ -160,15 +160,18 @@
 }
 
 .members-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: nowrap;
   gap: 3rem;
-  justify-items: center;
+  justify-content: center;
+  overflow-x: auto;
 }
 
 .member-card {
   text-align: center;
   padding: 2rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   color: var(--preto);
   background: var(--branco);
   border-radius: 20px;
@@ -183,7 +186,7 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Card centralizado para o sétimo membro */
+
 .center-card {
   grid-column: 2;
 }
