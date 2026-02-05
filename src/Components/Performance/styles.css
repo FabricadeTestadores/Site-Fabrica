@@ -225,23 +225,16 @@
     overflow-y: hidden;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: var(--cor-principal) transparent;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
     scroll-snap-type: x mandatory;
   }
 
   .performance-carousel-container::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .performance-carousel-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 3px;
-  }
-
-  .performance-carousel-container::-webkit-scrollbar-thumb {
-    background: var(--cor-principal);
-    border-radius: 3px;
+    display: none;
+    /* Chrome, Safari, Opera */
   }
 
   .performance-grid {
