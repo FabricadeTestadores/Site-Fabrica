@@ -40,7 +40,7 @@ const Events = () => {
             <p className="event-description">{event.description}</p>
             {/* BOTAO PARA INSCRICAO */}
             {activeTab === 'upcoming' && (
-              <button className="event-button" disabled>Inscrever-se</button>
+              <a href={event.link} className="event-button">Inscrever-se</a>
             )}
           </div>
         ))}

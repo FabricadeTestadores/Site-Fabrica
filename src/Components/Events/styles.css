@@ -104,19 +104,23 @@
 }
 
 .event-button {
-  background: #3498db;
+  background: #ff6600;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
+  font-family: var(--fonte-secundaria);
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
   transition: background 0.3s ease;
   width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 }
 
 .event-button:hover {
-  background: #2980b9;
+  background: #cc5200;
 }
 
 .event-button:disabled {
