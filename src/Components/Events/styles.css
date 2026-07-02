@@ -2,6 +2,7 @@
   padding: 7rem;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: calc(100vh - 80px);
 }
 
 .events-header {
@@ -53,6 +54,15 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+}
+
+.events-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #999;
+  font-size: 1.1rem;
+  padding: 3rem 0;
+  font-family: var(--fonte-secundaria);
 }
 
 .event-card {

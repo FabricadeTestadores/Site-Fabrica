@@ -29,21 +29,25 @@ const Events = () => {
       </div>
 
       <div className="events-grid">
-        {currentEvents.map((event) => (
-          <div key={event.id} className="event-card">
-            <h3>{event.title}</h3>
-            <div className="event-info">
-              <p className="event-date"><i className="far fa-calendar"></i> {event.date}</p>
-              <p className="event-time"><i className="far fa-clock"></i> {event.time}</p>
-              <p className="event-location"><i className="fas fa-map-marker-alt"></i> {event.location}</p>
+        {currentEvents.length === 0 ? (
+          <p className="events-empty">Nenhum evento disponível no momento.</p>
+        ) : (
+          currentEvents.map((event) => (
+            <div key={event.id} className="event-card">
+              <h3>{event.title}</h3>
+              <div className="event-info">
+                <p className="event-date"><i className="far fa-calendar"></i> {event.date}</p>
+                <p className="event-time"><i className="far fa-clock"></i> {event.time}</p>
+                <p className="event-location"><i className="fas fa-map-marker-alt"></i> {event.location}</p>
+              </div>
+              <p className="event-description">{event.description}</p>
+              {/* BOTAO PARA INSCRICAO */}
+              {activeTab === 'upcoming' && (
+                <a href={event.link} className="event-button">Inscrever-se</a>
+              )}
             </div>
-            <p className="event-description">{event.description}</p>
-            {/* BOTAO PARA INSCRICAO */}
-            {activeTab === 'upcoming' && (
-              <a href={event.link} className="event-button">Inscrever-se</a>
-            )}
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   )

@@ -28,7 +28,7 @@
     "title": "A Catalog of Prevention Strategies for Test Technical Debt",
     "author": "Levi Almeida Silva, Ismayle de Sousa Santos",
     "date": "2024",
-    "summary": "The demand for software innovation pressures organizations to balance meeting deadlines with maintaining quality. This situation can lead to Technical Debt (TD), which refers to postponed development tasks that offer short-term gains but harm long-term quality. During the development process, the Testing phase also accumulates TD, known as Test Debt, which affects its effectiveness.",
+    "summary": "A demanda por inovação em software pressiona as organizações a equilibrar o cumprimento de prazos com a manutenção da qualidade. Essa situação pode levar ao Débito Técnico (DT), que se refere a tarefas de desenvolvimento postergadas que oferecem ganhos de curto prazo, mas prejudicam a qualidade a longo prazo. Durante o processo de desenvolvimento, a fase de testes também acumula DT — conhecido como Débito de Teste —, o que compromete a sua eficácia.",
     "link": "https://dl.acm.org/doi/10.1145/3701625.3701692"
   },
   {
