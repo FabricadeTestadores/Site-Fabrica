@@ -227,6 +227,7 @@
 
   .members-grid {
     display: flex;
+    flex-wrap: nowrap;
     gap: 1.5rem;
     padding: 0 calc((100vw - 280px) / 2);
     margin: 2rem 0;
@@ -257,6 +258,7 @@
 
   .members-grid {
     display: flex;
+    flex-wrap: nowrap;
     gap: 1.5rem;
     padding: 0 calc((100vw - 280px) / 2);
     margin: 2rem 0;
