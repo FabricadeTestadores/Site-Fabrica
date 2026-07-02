@@ -1,18 +1,18 @@
-# 🧪 Site - Fábrica de Testadores
+# Site - Fábrica de Testadores
 
 Site institucional da **Fábrica de Testadores**, desenvolvido com React + Vite e publicado no GitHub Pages.
 
-🌐 **Acesse:** [fabricadetestadores.com.br](https://www.fabricadetestadores.com.br)
+ **Acesse:** [fabricadetestadores.com.br](https://www.fabricadetestadores.com.br)
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 A Fábrica de Testadores é um grupo de pesquisa e extensão voltado para a área de qualidade de software e testes. Este site apresenta informações sobre a equipe, eventos, artigos publicados e serviços oferecidos pelo grupo.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Versão | Descrição |
 |---|---|---|
@@ -23,7 +23,7 @@ A Fábrica de Testadores é um grupo de pesquisa e extensão voltado para a áre
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 src/
@@ -48,7 +48,7 @@ src/
 
 ---
 
-## 📄 Páginas
+## Páginas
 
 - **`/`** — Página inicial com apresentação do grupo
 - **`/artigos`** — Artigos científicos submetidos pelo grupo
@@ -57,7 +57,7 @@ src/
 
 ---
 
-## ⚙️ Como Rodar Localmente
+## Como Rodar Localmente
 
 ### Pré-requisitos
 
@@ -87,7 +87,7 @@ O servidor será iniciado em `http://localhost:5173`.
 
 ---
 
-## 🚢 Deploy
+## Deploy
 
 O deploy é feito automaticamente para o GitHub Pages com o comando abaixo. Ele executa o build e publica o conteúdo da pasta `dist` no branch `gh-pages`.
 
@@ -103,7 +103,7 @@ npm run deploy
 
 ---
 
-## 👥 Equipe
+## Equipe
 
 | Nome | Papel |
 |---|---|
@@ -118,7 +118,7 @@ npm run deploy
 
 ---
 
-## 📝 Como Atualizar Conteúdo
+## Como Atualizar Conteúdo
 
 Eventos e artigos são gerenciados via arquivos JSON — sem necessidade de mexer no código dos componentes.
 
@@ -128,6 +128,6 @@ Eventos e artigos são gerenciados via arquivos JSON — sem necessidade de mexe
 
 ---
 
-## 📜 Licença
+## Licença
 
 Este projeto é de uso interno do grupo Fábrica de Testadores — UECE.
