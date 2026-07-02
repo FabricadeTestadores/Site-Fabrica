@@ -33,5 +33,13 @@
     "date": "2024",
     "description": "Curso introdutório sobre testes unitários e testes de API.",
     "location": "LABCOMP - UECE"
+  },
+  {
+    "id": 1,
+    "title": "CTFL V.2",
+    "date": "20/04/2025 á 15/05/2025",
+    "time": "18:00",
+    "description": "A Fábrica de Testadores, projeto de extensão do GESAD/UECE, convida todos os interessados na área de testes de software e na certificação CTFL para o Minicurso gratuito: “Curso preparatorio CTFL V.4”.",
+    "location": "Youtube / Fabrica de testadores"
   }
 ]

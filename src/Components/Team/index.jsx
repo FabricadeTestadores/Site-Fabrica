@@ -128,7 +128,7 @@ export default function Team() {
                 </div>
               </div>
 
-                <div className="member-card">
+              <div className="member-card">
                 <div className="member-photo">
                   <img src="/wallison.jpg" alt="Wallison" />
                 </div>
@@ -145,7 +145,7 @@ export default function Team() {
                 </div>
               </div>
 
-               <div className="member-card center-card">
+              <div className="member-card center-card">
                 <div className="member-photo">
                   <img
                     src="/gabriel.jpg"
@@ -182,8 +182,8 @@ export default function Team() {
                 </div>
               </div>
 
-               
-               <div className="member-card">
+
+              <div className="member-card">
                 <div className="member-photo">
                   <img src="/Kayque Mateus.jpeg" alt="Kayque Mateus" />
                 </div>
@@ -216,6 +216,21 @@ export default function Team() {
                   </div>
                 </div>
               </div>
+
+              <div className="member-card">
+                <div className="member-photo">
+                  <img src="/rafael monteiro.png" alt="Rafael Monteiro" />
+                </div>
+                <div className="member-info">
+                  <h3 className="member-name">RAFAEL MONTEIRO</h3>
+                  <div className="member-social">
+                    <a href="https://www.linkedin.com/in/rafael-monteiro-de-castro/" target="_blank" rel="noopener noreferrer" className="social-link linkedin">
+                      <img src="/linkedin-icon.svg" alt="LinkedIn" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
 
             </div>
           </div>

@@ -6,5 +6,37 @@
     "date": "2025",
     "summary": "A comunicação em arquiteturas de microsserviços tem se tornado cada vez mais comum, exigindo atenção aos testes de segurança para garantir a qualidade das APIs. Este estudo, através de uma revisão multifocal, investigou ferramentas e estratégias de segurança aplicadas ao desenvolvimento de APIs. Foram analisados 50 artigos da literatura branca e 270 da cinza. As ferramentas mais citadas foram RESTest (6), OWASP ZAP (6) e Postman (4). Entre as estratégias, destacaram-se Spring Security (93), JWT (81) e API Gateway (37). Os principais testes envolvem validação de entrada (20), detecção de vulnerabilidades (19) e autenticação/autorização (14), com foco em mitigar ameaças como SQL Injection (11), falhas de configuração (10) e OWASP Top Ten (8).",
     "link": "https://sol.sbc.org.br/index.php/sbseg_estendido/article/view/36764"
+  },
+  {
+    "id": 2,
+    "title": "Big Data Fortaleza Platform: Quality Improvement with Testing Process",
+    "author": "Amanda K. B. Cavalcante, Ícaro S. de Oliveira, Victória T. Oliveria, Pedro Oliveira, Tales P. Nogueira, Ismayle S. Santos and Rossana Andrade",
+    "date": "2022",
+    "summary": "Em julho de 2022, o Instituto de Planejamento de Fortaleza (Iplanfor), em colaboração com o Grupo de Redes de Computadores, Engenharia de Software e Sistemas (GREat) da Universidade Federal do Ceará, lançou um projeto para desenvolver uma plataforma que utiliza *Big Data* para análise de dados e modelagem preditiva. Essa iniciativa visava apoiar o planejamento estratégico e criar soluções que impulsionassem o desenvolvimento de Fortaleza, orientando políticas públicas com base em evidências sólidas. A plataforma foi denominada Big Data Fortaleza. Dado o seu foco em aplicações governamentais, era essencial validar a plataforma por meio de diversos métodos de teste. Este artigo descreve o processo de teste adotado e destaca resultados fundamentais, incluindo maior precisão nas previsões e maior eficiência na segurança do sistema e dos dados. Além disso, aborda lições valiosas aprendidas, como a importância de uma comunicação eficaz na equipe e a necessidade de ajustes contínuos para manter a qualidade e a confiabilidade da plataforma.",
+    "link": "https://www.scitepress.org/Link.aspx?doi=10.5220/0013290500003929"
+  },
+  {
+    "id": 3,
+    "title": "Use of an Approach for Preventing Test Debt in a Brazilian Fintech: An Experience Report",
+    "author": "Levi Almeida Silva, Ismayle de Sousa Santos, Rossana Maria De Castro Andrade",
+    "date": "2024",
+    "summary": "A demanda por inovação em software tem desafiado as organizações a cumprir prazos e padrões de qualidade. O Débito Técnico (DT) refere-se a aspectos do desenvolvimento de software que são postergados para obter benefícios imediatos, mas que resultam em consequências negativas para a qualidade do produto a longo prazo. No ciclo de desenvolvimento de software, a fase de testes também acumula Débito Técnico — conhecido como Débito de Testes —, comprometendo essa etapa. Com o objetivo de apoiar o gerenciamento desses débitos, este artigo apresenta um relato de experiência sobre a aplicação de estratégias para prevenir o Débito de Testes em uma fintech brasileira. O trabalho descreve como a abordagem foi implementada, os resultados obtidos e as lições aprendidas com a experiência.",
+    "link": "https://dl.acm.org/doi/10.1145/3701625.3701639?__cf_chl_f_tk=2euXhoNJ5Dfi.FQPLi_BrM6eZsO4HxDOC1R.PFfoW1o-1783010752-1.0.1.1-oYwNZBEAiH_hAutfHITf8DUaRGh66zYeWXmEF_QRJvQ"
+  },
+  {
+    "id": 4,
+    "title": "A Catalog of Prevention Strategies for Test Technical Debt",
+    "author": "Levi Almeida Silva, Ismayle de Sousa Santos",
+    "date": "2024",
+    "summary": "The demand for software innovation pressures organizations to balance meeting deadlines with maintaining quality. This situation can lead to Technical Debt (TD), which refers to postponed development tasks that offer short-term gains but harm long-term quality. During the development process, the Testing phase also accumulates TD, known as Test Debt, which affects its effectiveness.",
+    "link": "https://dl.acm.org/doi/10.1145/3701625.3701692"
+  },
+  {
+    "id": 5,
+    "title": "Quality of Big Data Systems: a Systematic Review of Practices Methods and Tools",
+    "author": "Icaro Santos de Oliveira, João Matheus Alves, Samuel Alcântara, Ismayle Sousa Santos, Rossana Maria De Castro Andrade",
+    "date": "2024",
+    "summary": "À medida que a complexidade e a escala das aplicações de *big data* aumentam, as metodologias tradicionais de teste frequentemente se mostram insuficientes para garantir a confiabilidade e o desempenho do sistema. Este artigo apresenta uma revisão da literatura focada em testes e garantia da qualidade em sistemas de *big data*. O objetivo deste estudo é identificar os principais desafios enfrentados para assegurar a qualidade de sistemas de *big data*, bem como as práticas, os métodos e as ferramentas disponíveis para essa finalidade. Por meio de uma análise de fontes acadêmicas, identificamos lacunas de pesquisa e soluções que visam aprimorar os processos de teste e elevar a qualidade dos sistemas de *big data*. Nossas conclusões oferecem *insights* valiosos para pesquisadores e profissionais que buscam desenvolver estratégias de teste para ambientes de *big data*, contribuindo assim para o avanço da engenharia de software nesse domínio.",
+    "link": "https://sol.sbc.org.br/index.php/sbqs/article/view/32931"
   }
 ]
