@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": 7,
+    "title": "Introdução às Técnicas e Ferramentas para Testes de Segurança",
+    "date": "28 de setembro a 07 de outubro de 2026",
+    "description": "O curso apresenta uma introdução aos principais conceitos de testes de segurança, combinando fundamentos teóricos com atividades práticas. Ao longo dos encontros, serão utilizadas ferramentas como Nmap, Wireshark e JMeter para abordar reconhecimento de redes, análise de tráfego e testes de desempenho em ambientes controlados.\n\nO cronograma contará com aulas nos dias 28/09, 30/09, 02/10 e 05/10, além de uma atividade final no dia 07/10, composta por um CTF com cenários práticos e pelo encontro de encerramento e integração dos conteúdos.",
+    "link": "https://forms.gle/ztpu9ijUUb3zugDh9"
+  }
+]

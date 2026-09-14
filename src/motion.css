@@ -1,0 +1,110 @@
+:root {
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes content-enter {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes image-enter {
+  from { transform: scale(1.045); }
+  to { transform: scale(1); }
+}
+
+@keyframes line-enter {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy > *,
+  .hero-visual,
+  .page-intro .container > * {
+    animation: content-enter 800ms var(--motion-ease) backwards;
+  }
+
+  .hero-copy > :nth-child(2),
+  .page-intro .container > :nth-child(2) { animation-delay: 70ms; }
+  .hero-copy > :nth-child(3),
+  .page-intro .container > :nth-child(3) { animation-delay: 140ms; }
+  .hero-copy > :nth-child(4),
+  .page-intro .container > :nth-child(4) { animation-delay: 210ms; }
+  .hero-copy > :nth-child(5) { animation-delay: 280ms; }
+  .hero-visual { animation-delay: 160ms; }
+  .hero-image-wrap { overflow: hidden; }
+  .hero-image { animation: image-enter 1400ms var(--motion-ease) both; }
+  .small-rule { transform-origin: left; animation: line-enter 850ms 240ms var(--motion-ease) backwards; }
+
+  .hero-copy > :focus-within,
+  .page-intro .container > :focus-within { animation: none; }
+
+  .button {
+    transition: transform 220ms var(--motion-ease), box-shadow 220ms ease,
+      color var(--motion-fast), background-color var(--motion-fast), border-color var(--motion-fast);
+  }
+  .button:active { transform: translateY(1px); }
+
+  .arrow,
+  .figure-mark,
+  .objective-number,
+  .impact-grid dd,
+  .partners-logos img,
+  .hero-institutions img {
+    transition: transform 300ms var(--motion-ease), color var(--motion-fast);
+  }
+
+  .objectives-grid article,
+  .agenda-preview,
+  .service-contact {
+    transition: transform 300ms var(--motion-ease), box-shadow 300ms ease, border-color 300ms ease;
+  }
+
+  :is(.button, .text-link, .nav-contact, .footer-email):focus-visible .arrow {
+    transform: translateX(4px);
+  }
+  :is(.button, .text-link, .nav-contact, .footer-email):focus-visible .arrow-diagonal {
+    transform: translate(3px, -3px);
+  }
+
+  .disclosure[open] > p { animation: content-enter 300ms var(--motion-ease); }
+  .events-tabs button[aria-selected="true"]::after {
+    transform-origin: left;
+    animation: line-enter 280ms var(--motion-ease);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .button:hover { transform: translateY(-3px); box-shadow: 0 8px 18px #17313d1a; }
+  .button:active { transform: translateY(0); box-shadow: none; }
+  :is(.button, .text-link, .nav-contact, .footer-email):hover .arrow { transform: translateX(4px); }
+  :is(.button, .text-link, .nav-contact, .footer-email):hover .arrow-diagonal { transform: translate(3px, -3px); }
+  .objectives-grid article:hover { transform: translateY(-5px); border-color: var(--accent); }
+  .objectives-grid article:hover .objective-number { transform: translateX(5px); }
+  .agenda-preview:hover,
+  .service-contact:hover { transform: translateY(-4px); box-shadow: 0 12px 28px #17313d0d; }
+  .impact-grid > div:hover dd { transform: translateY(-3px); color: var(--primary); }
+  .partners-logos a:hover img,
+  .hero-institutions a:hover img { transform: translateY(-3px); }
+  .hero-visual:hover .figure-mark { transform: translate(4px, -4px); }
+}
+
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) {
+  .primary-navigation > a:not(.nav-contact)::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms var(--motion-ease);
+  }
+  .primary-navigation > a:is(.active, :hover, :focus-visible)::after { transform: scaleX(1); }
+}
+
+@media (prefers-reduced-motion: no-preference) and (max-width: 1023px) {
+  .primary-navigation.is-open { animation: content-enter 240ms var(--motion-ease); }
+}

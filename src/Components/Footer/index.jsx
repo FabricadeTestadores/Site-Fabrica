@@ -1,134 +1,78 @@
-import "./styles.css";
-import postcardIcon from "/postcard-icon.svg";
-import locatorIcon from "/locator-icon.svg";
-import githubIcon from "/github-icon.svg";
-import linkedinIcon from "/linkedin-icon.svg";
-import youtubeIcon from "/youtube-icon.svg";
-import instagramIcon from "/instagram-icon.svg";
-import gitbookIcon from "/gitbook-icon.svg";
-
+import { Link } from 'react-router-dom';
+import { Arrow, ExternalLink } from '../UI';
+import './styles.css';
+const partners = [
+  ['GREat', '/great.png', 'https://www.great.ufc.br/'],
+  ['Residência em Segurança da Informação', '/Residencia.png', 'http://rsi.dc.ufc.br/', 'partner-logo--wide'],
+  ['DETIC', '/detic.png', 'https://www.uece.br/proplan/detic/'],
+  ['PROEX', '/PROEX.png', 'https://www.uece.br/proex/'],
+];
+const channels = [
+  ['GitHub', 'https://github.com/FabricadeTestadores'],
+  ['GitBook', 'https://fabrica-de-testadores-1.gitbook.io/fabrica-de-testadores'],
+  ['LinkedIn', 'https://www.linkedin.com/in/f%C3%A1brica-de-testadores-06b161381/?originalSubdomain=br'],
+  ['YouTube', 'https://www.youtube.com/@FabricadeTestadores'],
+  ['Instagram · GESAD', 'https://www.instagram.com/gesad.uece/'],
+];
 export default function Footer() {
   return (
-    <footer className="footer" id="contact">
+    <footer id="contact" tabIndex={-1}>
       <div className="footer-main">
-        <div className="footer-container">
-
-
-          <div className="footer-grid">
-
-            <div className="footer-column">
-              <h3 className="column-title">CONTATOS</h3>
-              <div className="contact-list">
-                <div className="contact-item">
-                  <div className="contact-icon">
-                    <img src={postcardIcon} alt="Ícone de email" />
-                  </div>
-                  <a href="mailto:fabrica.testadores@uece.br" className="contact-link">
-                    fabrica.testadores@uece.br
-                  </a>
-                </div>
-
-                <div className="contact-item">
-                  <div className="contact-icon">
-                    <img src={locatorIcon} alt="Ícone de localização" />
-                  </div>
-                  <div className="contact-text">
-                    <p>Av. Dr. Silas Munguba, 1700<br />
-                      Itaperi, Fortaleza - CE<br />
-                      CEP: 60714-903</p>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-
-            <div className="footer-column">
-              <h3 className="column-title">PARCERIAS</h3>
-              <div className="partners-list">
-                <div className="partner-item">
-                  <a href="https://www.great.ufc.br/" target="_blank" rel="noopener noreferrer">
-                    <img src="/great.png" alt="GREat" className="partner-logo" />
-                  </a>
-                </div>
-                <div className="partner-item">
-                  <a href="http://rsi.dc.ufc.br/" target="_blank" rel="noopener noreferrer">
-                    <img src="/Residencia.png" alt="Residência em Segurança da Informação" className="partner-logo" />
-                  </a>
-                </div>
-                <div className="partner-item">
-                  <a href="https://www.uece.br/proplan/detic/" target="_blank" rel="noopener noreferrer">
-                    <img src="/detic.png" alt="DETIC" className="partner-logo" />
-                  </a>
-                </div>
-                <div className="partner-item">
-                  <a href="https://www.uece.br/proex/" target="_blank" rel="noopener noreferrer">
-                    <img src="/PROEX.png" alt="PROEX" className="partner-logo" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="footer-column">
-              <h3 className="column-title">REDES SOCIAIS</h3>
-              <div className="contact-list">
-                <div className="contact-item">
-                  <div className="contact-icon">
-                    <img src={githubIcon} alt="Ícone do GitHub" />
-                  </div>
-                  <a href="https://github.com/FabricadeTestadores" target="_blank" rel="noopener noreferrer" className="contact-link">
-                    GitHub
-                  </a>
-                </div>
-
-                <div className="contact-item">
-                  <div className="contact-icon">
-                    <img src={gitbookIcon} alt="Ícone do GitBook" />
-                  </div>
-                  <a href="https://fabrica-de-testadores-1.gitbook.io/fabrica-de-testadores" target="_blank" rel="noopener noreferrer" className="contact-link">
-                    GitBook
-                  </a>
-                </div>
-
-                <div className="contact-item">
-                  <div className="contact-icon">
-                    <img src={linkedinIcon} alt="Ícone do LinkedIn" />
-                  </div>
-                  <a href="https://www.linkedin.com/in/f%C3%A1brica-de-testadores-06b161381/?originalSubdomain=br" target="_blank" rel="noopener noreferrer" className="contact-link">
-                    LinkedIn
-                  </a>
-                </div>
-
-                <div className="contact-item">
-                  <div className="contact-icon youtube-icon" aria-hidden="true">
-                    <img src={youtubeIcon} alt="Ícone do YouTube" />
-                  </div>
-                  <a href="https://www.youtube.com/@FabricadeTestadores" target="_blank" rel="noopener noreferrer" className="contact-link">
-                    YouTube
-                  </a>
-                </div>
-
-                <div className="contact-item">
-                  <div className="contact-icon instagram-icon">
-                    <img src={instagramIcon} alt="Ícone do Instagram" />
-                  </div>
-                  <a href="https://www.instagram.com/gesad.uece/" target="_blank" rel="noopener noreferrer" className="contact-link">
-                    Instagram - GESAD
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
+        <div className="container">
+          <div className="footer-invitation">
+            <h2>Qualidade se constrói <span>em conjunto.</span></h2>
+            <a href="mailto:fabrica.testadores@uece.br" className="footer-email">fabrica.testadores@uece.br <Arrow diagonal /></a>
           </div>
-        </div>
-      </div>
-
-
-      <div className="footer-bottom">
-        <div className="footer-container">
-          <div className="copyright-content">
-            <p>&copy; 2025 Fábrica de Testadores - UECE. Todos os direitos reservados.</p>
+          <div className="footer-grid">
+            <div className="footer-about">
+              <Link className="brand" to="/">
+                <img src="/logo_fabrica-removebg-preview.png" alt="" width="44" height="44" />
+                <span>Fábrica de<br /><strong>Testadores<span className="brand-dot">.</span></strong></span>
+              </Link>
+              <p>Formação, pesquisa e prática<br />em qualidade de software.</p>
+              <p className="footer-affiliation">Projeto de extensão · GESAD / UECE</p>
+            </div>
+            <nav aria-label="Navegação do rodapé">
+              <h3>Explore</h3>
+              <Link to="/#about">O projeto</Link>
+              <Link to="/eventos">Eventos</Link>
+              <Link to="/artigos">Artigos</Link>
+              <Link to="/servicos">Serviços</Link>
+              <Link to="/#team">Membros</Link>
+            </nav>
+            <div className="footer-channels">
+              <h3>Acompanhe</h3>
+              {channels.map(([name, url]) => <ExternalLink href={url} key={name}>{name}</ExternalLink>)}
+            </div>
+            <div className="footer-address">
+              <h3>Onde estamos</h3>
+              <address>Universidade Estadual do Ceará<br />Av. Dr. Silas Munguba, 1700<br />Itaperi, Fortaleza — CE<br />CEP: 60714-903</address>
+            </div>
+          </div>
+          <section className="partners-inner" aria-labelledby="footer-partners-title">
+            <div className="partners-heading">
+              <h2 id="footer-partners-title">Nossos parceiros</h2>
+              <p>Conexões que fortalecem.</p>
+            </div>
+            <ul className="partners-logos">
+              {partners.map(([name, image, url, modifier = '']) => (
+                <li key={name}>
+                  <a
+                    className={`partner-logo ${modifier}`.trim()}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${name} (abre em nova aba)`}
+                  >
+                    <img src={image} alt={name} width="144" height="48" loading="lazy" decoding="async" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <div className="footer-bottom">
+            <p>© {new Date().getFullYear()} Fábrica de Testadores — UECE.</p>
+            <span>Feito para compartilhar conhecimento.</span>
           </div>
         </div>
       </div>

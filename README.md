@@ -31,6 +31,7 @@ src/
 ├── pages/
 │   ├── home.jsx             # Página inicial
 │   ├── artigos.jsx          # Página de artigos
+│   ├── artigo.jsx           # Página individual de um artigo
 │   ├── eventos.jsx          # Página de eventos
 │   └── servico.jsx          # Página de serviços
 ├── Components/
@@ -52,6 +53,7 @@ src/
 
 - **`/`** — Página inicial com apresentação do grupo
 - **`/artigos`** — Artigos científicos submetidos pelo grupo
+- **`/artigos/:id`** — Título, autores, conferência ou revista, ano e resumo de um artigo, com acesso à publicação original
 - **`/eventos`** — Eventos futuros e passados com opção de inscrição
 - **`/servicos`** — Serviços oferecidos pela Fábrica de Testadores
 
@@ -125,6 +127,8 @@ Eventos e artigos são gerenciados via arquivos JSON — sem necessidade de mexe
 - **Próximos eventos:** `src/content/events/upcomingEvents.json`
 - **Eventos passados:** `src/content/events/pastEvents.json`
 - **Artigos:** `src/content/articles/artigos.json`
+
+Em cada artigo, preencha `venue` com o nome da conferência, workshop ou revista de submissão. Quando o campo estiver vazio, a página exibe "Não informada".
 
 ---
 

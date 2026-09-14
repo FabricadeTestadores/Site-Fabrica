@@ -1,42 +1,38 @@
 [
   {
+    "id": 2,
+    "title": "Cognitive Barriers in Software Security: A Study of Novices’ Interpretation of SAST Reports",
+    "author": "Rubens Abraão da Silva Sousa, Gabriel Pinheiro Rezende de Lima, Ismayle de Sousa Santos, Sávio Freire",
+    "date": "2026",
+    "venue": "SBES",
+    "summary": "O estudo investiga as barreiras cognitivas e técnicas enfrentadas por iniciantes na interpretação de relatórios de ferramentas de análise estática de segurança de aplicações (SAST). Participaram 30 iniciantes, que analisaram cenários de injeção de SQL e cross-site scripting (XSS) derivados do OWASP Juice Shop. A avaliação considerou aspectos conceituais, contextuais, terminológicos e operacionais, além da compreensão percebida. Embora os participantes tenham apresentado bom desempenho em tarefas operacionais e de interpretação técnica, foram identificadas dificuldades conceituais, especialmente em cenários complexos, e divergências entre desempenho real e compreensão percebida. Os resultados apontam a necessidade de ampliar o apoio à compreensão e à explicabilidade nas ferramentas de segurança.",
+    "link": "https://cbsoft.sbc.org.br/2026/data/papers/sbes/Cognitive%20Barriers%20in%20Software%20Security%20A%20Study%20of%20Novices%E2%80%99%20Interpretation%20of%20SAST%20Reports.pdf"
+  },
+  {
+    "id": 3,
+    "title": "Accountability in Agentic Secure Software Development Life Cycles: Challenges, Degradation Scenarios, and Governance Principles",
+    "author": "Rubens Abraão da Silva Sousa, Gabriel Pinheiro Rezende de Lima, Igor Ramsés Temóteo dos Santos, Sávio Freire, Ismayle de Sousa Santos, Paulo Henrique Mendes Maia",
+    "date": "2026",
+    "venue": "SE4AS 2026 — Workshop sobre Engenharia de Software para Sistemas Agentes",
+    "summary": "Este artigo de posicionamento discute os desafios de responsabilização por decisões de segurança em ciclos de desenvolvimento com agentes baseados em grandes modelos de linguagem. Enquanto a responsabilidade formal permanece humana, a construção das decisões passa a ser distribuída entre pessoas e agentes. O trabalho apresenta o conceito de Accountability Chasm, uma lacuna entre a autonomia operacional dos agentes e a capacidade dos mecanismos de governança de preservar a rastreabilidade, a possibilidade de contestação e a atribuição de responsabilidade. São descritos três cenários de degradação em atividades de segurança, propostos quatro princípios de governança orientados à responsabilização e apresentada uma agenda de pesquisa.",
+    "link": "https://cbsoft.sbc.org.br/2026/data/papers/workshops/Accountability%20in%20Agentic%20Secure%20Software%20Development%20Life%20Cycles%20Challenges,%20Degradation%20Scenarios,%20and%20Governance%20Principles.pdf"
+  },
+  {
+    "id": 4,
+    "title": "Beyond Task Completion: Product and Human-Agent Process Quality in Agentic Software Engineering",
+    "author": "Rubens Abraão da Silva Sousa, Gabriel Pinheiro Rezende de Lima, Evellin Moura, Sávio Freire, Ismayle de Sousa Santos, Paulo Henrique Mendes Maia",
+    "date": "2026",
+    "venue": "SE4AS 2026 — Workshop sobre Engenharia de Software para Sistemas Agentes",
+    "summary": "O artigo propõe ampliar a avaliação da engenharia de software com agentes para além da conclusão de tarefas e da correção dos artefatos produzidos. O foco recai sobre a qualidade do processo de colaboração entre humanos e agentes, organizada em quatro dimensões: rastreabilidade das decisões, carga de trabalho da revisão humana, calibração da confiança e atribuição de responsabilidade. Para cada dimensão, são discutidas definições operacionais, possíveis métricas e instrumentos de medição. O trabalho também analisa as relações entre essas dimensões e apresenta uma agenda de pesquisa para tornar o desenvolvimento com agentes mais observável, responsável e governável.",
+    "link": "https://cbsoft.sbc.org.br/2026/data/papers/workshops/Beyond%20Task%20Completion%20Product%20and%20Human-Agent%20Process%20Quality%20in%20Agentic%20Software%20Engineering.pdf"
+  },
+  {
     "id": 1,
     "title": "Revisão Multifocal sobre ferramentas de teste e estratégias de segurança de APIs em microsserviços",
     "author": "Ismayle de S. Santos, Ian José Soares Mendes, Lyanderson S. Rodrigues, Rubens A. da S. Sousa",
     "date": "2025",
+    "venue": "Anais Estendidos do XXV Simpósio Brasileiro de Cibersegurança — SBSeg 2025",
     "summary": "A comunicação em arquiteturas de microsserviços tem se tornado cada vez mais comum, exigindo atenção aos testes de segurança para garantir a qualidade das APIs. Este estudo, através de uma revisão multifocal, investigou ferramentas e estratégias de segurança aplicadas ao desenvolvimento de APIs. Foram analisados 50 artigos da literatura branca e 270 da cinza. As ferramentas mais citadas foram RESTest (6), OWASP ZAP (6) e Postman (4). Entre as estratégias, destacaram-se Spring Security (93), JWT (81) e API Gateway (37). Os principais testes envolvem validação de entrada (20), detecção de vulnerabilidades (19) e autenticação/autorização (14), com foco em mitigar ameaças como SQL Injection (11), falhas de configuração (10) e OWASP Top Ten (8).",
     "link": "https://sol.sbc.org.br/index.php/sbseg_estendido/article/view/36764"
-  },
-  {
-    "id": 2,
-    "title": "Big Data Fortaleza Platform: Quality Improvement with Testing Process",
-    "author": "Amanda K. B. Cavalcante, Ícaro S. de Oliveira, Victória T. Oliveria, Pedro Oliveira, Tales P. Nogueira, Ismayle S. Santos and Rossana Andrade",
-    "date": "2022",
-    "summary": "Em julho de 2022, o Instituto de Planejamento de Fortaleza (Iplanfor), em colaboração com o Grupo de Redes de Computadores, Engenharia de Software e Sistemas (GREat) da Universidade Federal do Ceará, lançou um projeto para desenvolver uma plataforma que utiliza *Big Data* para análise de dados e modelagem preditiva. Essa iniciativa visava apoiar o planejamento estratégico e criar soluções que impulsionassem o desenvolvimento de Fortaleza, orientando políticas públicas com base em evidências sólidas. A plataforma foi denominada Big Data Fortaleza. Dado o seu foco em aplicações governamentais, era essencial validar a plataforma por meio de diversos métodos de teste. Este artigo descreve o processo de teste adotado e destaca resultados fundamentais, incluindo maior precisão nas previsões e maior eficiência na segurança do sistema e dos dados. Além disso, aborda lições valiosas aprendidas, como a importância de uma comunicação eficaz na equipe e a necessidade de ajustes contínuos para manter a qualidade e a confiabilidade da plataforma.",
-    "link": "https://www.scitepress.org/Link.aspx?doi=10.5220/0013290500003929"
-  },
-  {
-    "id": 3,
-    "title": "Use of an Approach for Preventing Test Debt in a Brazilian Fintech: An Experience Report",
-    "author": "Levi Almeida Silva, Ismayle de Sousa Santos, Rossana Maria De Castro Andrade",
-    "date": "2024",
-    "summary": "A demanda por inovação em software tem desafiado as organizações a cumprir prazos e padrões de qualidade. O Débito Técnico (DT) refere-se a aspectos do desenvolvimento de software que são postergados para obter benefícios imediatos, mas que resultam em consequências negativas para a qualidade do produto a longo prazo. No ciclo de desenvolvimento de software, a fase de testes também acumula Débito Técnico — conhecido como Débito de Testes —, comprometendo essa etapa. Com o objetivo de apoiar o gerenciamento desses débitos, este artigo apresenta um relato de experiência sobre a aplicação de estratégias para prevenir o Débito de Testes em uma fintech brasileira. O trabalho descreve como a abordagem foi implementada, os resultados obtidos e as lições aprendidas com a experiência.",
-    "link": "https://dl.acm.org/doi/10.1145/3701625.3701639?__cf_chl_f_tk=2euXhoNJ5Dfi.FQPLi_BrM6eZsO4HxDOC1R.PFfoW1o-1783010752-1.0.1.1-oYwNZBEAiH_hAutfHITf8DUaRGh66zYeWXmEF_QRJvQ"
-  },
-  {
-    "id": 4,
-    "title": "A Catalog of Prevention Strategies for Test Technical Debt",
-    "author": "Levi Almeida Silva, Ismayle de Sousa Santos",
-    "date": "2024",
-    "summary": "A demanda por inovação em software pressiona as organizações a equilibrar o cumprimento de prazos com a manutenção da qualidade. Essa situação pode levar ao Débito Técnico (DT), que se refere a tarefas de desenvolvimento postergadas que oferecem ganhos de curto prazo, mas prejudicam a qualidade a longo prazo. Durante o processo de desenvolvimento, a fase de testes também acumula DT — conhecido como Débito de Teste —, o que compromete a sua eficácia.",
-    "link": "https://dl.acm.org/doi/10.1145/3701625.3701692"
-  },
-  {
-    "id": 5,
-    "title": "Quality of Big Data Systems: a Systematic Review of Practices Methods and Tools",
-    "author": "Icaro Santos de Oliveira, João Matheus Alves, Samuel Alcântara, Ismayle Sousa Santos, Rossana Maria De Castro Andrade",
-    "date": "2024",
-    "summary": "À medida que a complexidade e a escala das aplicações de *big data* aumentam, as metodologias tradicionais de teste frequentemente se mostram insuficientes para garantir a confiabilidade e o desempenho do sistema. Este artigo apresenta uma revisão da literatura focada em testes e garantia da qualidade em sistemas de *big data*. O objetivo deste estudo é identificar os principais desafios enfrentados para assegurar a qualidade de sistemas de *big data*, bem como as práticas, os métodos e as ferramentas disponíveis para essa finalidade. Por meio de uma análise de fontes acadêmicas, identificamos lacunas de pesquisa e soluções que visam aprimorar os processos de teste e elevar a qualidade dos sistemas de *big data*. Nossas conclusões oferecem *insights* valiosos para pesquisadores e profissionais que buscam desenvolver estratégias de teste para ambientes de *big data*, contribuindo assim para o avanço da engenharia de software nesse domínio.",
-    "link": "https://sol.sbc.org.br/index.php/sbqs/article/view/32931"
   }
 ]
