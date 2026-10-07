@@ -55,7 +55,7 @@
   }
 
   .objectives-grid article,
-  .agenda-preview,
+  .course-card,
   .service-contact {
     transition: transform 300ms var(--motion-ease), box-shadow 300ms ease, border-color 300ms ease;
   }
@@ -81,7 +81,7 @@
   :is(.button, .text-link, .nav-contact, .footer-email):hover .arrow-diagonal { transform: translate(3px, -3px); }
   .objectives-grid article:hover { transform: translateY(-5px); border-color: var(--accent); }
   .objectives-grid article:hover .objective-number { transform: translateX(5px); }
-  .agenda-preview:hover,
+  .course-card:hover,
   .service-contact:hover { transform: translateY(-4px); box-shadow: 0 12px 28px #17313d0d; }
   .impact-grid > div:hover dd { transform: translateY(-3px); color: var(--primary); }
   .partners-logos a:hover img,

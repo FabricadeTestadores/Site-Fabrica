@@ -6,7 +6,7 @@ const revealSelector = [
   '.section-heading',
   '.objectives-grid > article',
   '.knowledge-articles > article',
-  '.agenda-preview',
+  '.course-card',
   '.team-grid > article',
   '.results-toolbar',
   '.events-tabs',
