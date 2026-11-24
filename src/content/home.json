@@ -1,17 +1,7 @@
 {
   "hero": {
-    "eyebrow": "Extensão universitária · UECE",
-    "title": "Qualidade de software começa com",
-    "firstWord": "projetos.",
     "finalWord": "pessoas.",
-    "description": "Formamos pessoas em testes de software e conectamos conhecimento, pesquisa e prática para construir sistemas mais confiáveis.",
-    "primaryLabel": "Explore nossos eventos",
-    "primaryLink": "/eventos",
     "secondaryLabel": "Conheça o projeto",
-    "secondaryLink": "/#about",
-    "imageLabel": "APRENDER. TESTAR. COMPARTILHAR.",
-    "caption": "Da universidade",
-    "captionHighlight": "para a prática.",
     "photos": [
       {
         "src": "/Fabrica.jpeg",
@@ -28,6 +18,14 @@
         "fit": "online"
       }
     ],
+    "caption": "Da universidade",
+    "eyebrow": "Extensão universitária · UECE teste",
+    "captionHighlight": "para a prática.",
+    "secondaryLink": "/#about",
+    "primaryLabel": "Explore nossos eventos",
+    "title": "Qualidade de software começa com",
+    "imageLabel": "APRENDER. TESTAR. COMPARTILHAR.",
+    "firstWord": "projetos.",
     "institutions": [
       {
         "name": "Universidade Estadual do Ceará",
@@ -41,18 +39,12 @@
         "url": "https://gesaduece.com.br/pt",
         "wide": false
       }
-    ]
+    ],
+    "primaryLink": "/eventos",
+    "description": "Formamos pessoas em testes de software e conectamos conhecimento, pesquisa e prática para construir sistemas mais confiáveis."
   },
   "about": {
-    "eyebrow": "O projeto",
-    "title": "Conhecimento aberto.",
-    "highlight": "Qualidade",
     "titleEnd": "compartilhada.",
-    "odsLabel": "Objetivo da ODS relacionado",
-    "odsLink": "https://brasil.un.org/pt-br/sdgs/4",
-    "odsImage": "/ods-4-educacao-de-qualidade.svg",
-    "odsAlt": "ODS 4 — Educação de qualidade",
-    "lead": "Somos a Fábrica de Testadores, um projeto de extensão da Universidade Estadual do Ceará dedicado à formação em testes, segurança e qualidade de software.",
     "paragraphs": [
       {
         "text": "Reunimos recursos da literatura, desenvolvemos materiais didáticos e oferecemos palestras e minicursos abertos à comunidade. Aproximamos estudantes e profissionais dos desafios reais da área."
@@ -61,8 +53,16 @@
         "text": "Com verificação e validação de software, buscamos melhorar a confiabilidade, o desempenho e a experiência de quem usa os sistemas, reduzindo riscos e custos."
       }
     ],
+    "eyebrow": "O projeto",
     "disclosureTitle": "Nosso compromisso com a educação",
-    "disclosureText": "Alinhado aos Objetivos de Desenvolvimento Sustentável da ONU, especialmente às metas 4.3 e 4.4, o projeto promove a igualdade de acesso à educação técnica, profissional e superior de qualidade, a preços acessíveis. Também busca ampliar as competências de jovens e adultos para o emprego, o trabalho decente e o empreendedorismo até 2030."
+    "odsAlt": "ODS 4 — Educação de qualidade",
+    "highlight": "Qualidade",
+    "odsLabel": "Objetivo da ODS relacionado",
+    "odsLink": "https://brasil.un.org/pt-br/sdgs/4",
+    "title": "Conhecimento aberto.",
+    "disclosureText": "Alinhado aos Objetivos de Desenvolvimento Sustentável da ONU, especialmente às metas 4.3 e 4.4, o projeto promove a igualdade de acesso à educação técnica, profissional e superior de qualidade, a preços acessíveis. Também busca ampliar as competências de jovens e adultos para o emprego, o trabalho decente e o empreendedorismo até 2030.",
+    "lead": "Somos a Fábrica de Testadores, um projeto de extensão da Universidade Estadual do Ceará dedicado à formação em testes, segurança e qualidade de software.",
+    "odsImage": "/ods-4-educacao-de-qualidade.svg"
   },
   "objectives": {
     "eyebrow": "O que nos move",
