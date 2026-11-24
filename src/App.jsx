@@ -8,9 +8,11 @@ import Artigo from './pages/artigo';
 import Eventos from './pages/eventos';
 import Servico from './pages/servico';
 import usePageMotion from './hooks/usePageMotion';
-import articles from './content/articles/artigos.json';
+import articlesData from './content/articles/artigos.json';
+import site from './content/site.json';
 import './App.css';
 import './motion.css';
+const articles = articlesData.articles;
 
 export default function App() {
   const location = useLocation();
@@ -19,7 +21,9 @@ export default function App() {
   useEffect(() => {
     const articleRoute = matchPath('/artigos/:id', location.pathname);
     const article = articleRoute && articles.find((item) => String(item.id) === articleRoute.params.id);
-    document.title = articleRoute ? `${article?.title || 'Artigo não encontrado'} | Fábrica de Testadores` : 'Fabrica de Testadores';
+    document.title = articleRoute ? `${article?.title || 'Artigo não encontrado'} | ${site.title}` : site.title;
+    document.querySelector('meta[name="description"]')?.setAttribute('content', site.description);
+    document.querySelector('link[rel="icon"]')?.setAttribute('href', site.logo);
     const target = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
     if (target) {
       target.scrollIntoView();

@@ -1,0 +1,108 @@
+{
+  "title": "Fábrica de Testadores",
+  "description": "Conheça a Fábrica de Testadores, projeto de extensão da UECE. Formação, pesquisa, eventos e serviços em testes, segurança e qualidade de software.",
+  "brandLine1": "Fábrica de",
+  "brandLine2": "Testadores",
+  "logo": "/logo_fabrica-removebg-preview.png",
+  "email": "fabrica.testadores@uece.br",
+  "address": "Universidade Estadual do Ceará\nAv. Dr. Silas Munguba, 1700\nItaperi, Fortaleza — CE\nCEP: 60714-903",
+  "contactAction": "Fale com a gente",
+  "footerDescription": "Formação, pesquisa e prática\nem qualidade de software.",
+  "affiliation": "Projeto de extensão · GESAD / UECE",
+  "invitation": "Qualidade se constrói",
+  "invitationHighlight": "em conjunto.",
+  "copyrightName": "Fábrica de Testadores — UECE",
+  "footerNote": "Feito para compartilhar conhecimento.",
+  "navigation": [
+    {
+      "label": "Início",
+      "to": "/"
+    },
+    {
+      "label": "Eventos",
+      "to": "/eventos"
+    },
+    {
+      "label": "Artigos",
+      "to": "/artigos"
+    },
+    {
+      "label": "Serviços",
+      "to": "/servicos"
+    },
+    {
+      "label": "Membros",
+      "to": "/#team"
+    }
+  ],
+  "footerNavigation": [
+    {
+      "label": "O projeto",
+      "to": "/#about"
+    },
+    {
+      "label": "Eventos",
+      "to": "/eventos"
+    },
+    {
+      "label": "Artigos",
+      "to": "/artigos"
+    },
+    {
+      "label": "Serviços",
+      "to": "/servicos"
+    },
+    {
+      "label": "Membros",
+      "to": "/#team"
+    }
+  ],
+  "channels": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/FabricadeTestadores"
+    },
+    {
+      "name": "GitBook",
+      "url": "https://fabrica-de-testadores-1.gitbook.io/fabrica-de-testadores"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/f%C3%A1brica-de-testadores-06b161381/?originalSubdomain=br"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/@FabricadeTestadores"
+    },
+    {
+      "name": "Instagram · GESAD",
+      "url": "https://www.instagram.com/gesad.uece/"
+    }
+  ],
+  "partners": [
+    {
+      "name": "GREat",
+      "image": "/great.png",
+      "url": "https://www.great.ufc.br/",
+      "wide": false
+    },
+    {
+      "name": "Residência em Segurança da Informação",
+      "image": "/Residencia.png",
+      "url": "http://rsi.dc.ufc.br/",
+      "wide": true
+    },
+    {
+      "name": "DETIC",
+      "image": "/detic.png",
+      "url": "https://www.uece.br/proplan/detic/",
+      "wide": false
+    },
+    {
+      "name": "PROEX",
+      "image": "/PROEX.png",
+      "url": "https://www.uece.br/proex/",
+      "wide": false
+    }
+  ]
+}

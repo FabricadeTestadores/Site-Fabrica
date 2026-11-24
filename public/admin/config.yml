@@ -1,0 +1,1145 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "FabricadeTestadores/Site-Fabrica",
+    "branch": "main",
+    "base_url": "",
+    "auth_endpoint": "auth"
+  },
+  "locale": "pt",
+  "site_url": "https://www.fabricadetestadores.com.br",
+  "display_url": "https://www.fabricadetestadores.com.br",
+  "logo_url": "/logo_fabrica-removebg-preview.png",
+  "media_folder": "public/uploads",
+  "public_folder": "/uploads",
+  "collections": [
+    {
+      "name": "configuracoes",
+      "label": "Configurações do site",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "site",
+          "label": "Identidade, contatos, menus e parceiros",
+          "file": "src/content/site.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Nome do site",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Descrição para buscadores",
+              "widget": "text"
+            },
+            {
+              "name": "brandLine1",
+              "label": "Marca: primeira linha",
+              "widget": "string"
+            },
+            {
+              "name": "brandLine2",
+              "label": "Marca: segunda linha",
+              "widget": "string"
+            },
+            {
+              "name": "logo",
+              "label": "Logotipo e favicon",
+              "widget": "image",
+              "choose_url": false,
+              "media_library": {
+                "allow_multiple": false,
+                "config": {
+                  "max_file_size": 5242880
+                }
+              }
+            },
+            {
+              "name": "email",
+              "label": "E-mail",
+              "widget": "string",
+              "pattern": [
+                "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+                "Informe um e-mail válido."
+              ]
+            },
+            {
+              "name": "address",
+              "label": "Endereço (uma linha por trecho)",
+              "widget": "text"
+            },
+            {
+              "name": "contactAction",
+              "label": "Botão de contato do menu",
+              "widget": "string"
+            },
+            {
+              "name": "footerDescription",
+              "label": "Descrição do rodapé",
+              "widget": "text"
+            },
+            {
+              "name": "affiliation",
+              "label": "Vínculo institucional",
+              "widget": "string"
+            },
+            {
+              "name": "invitation",
+              "label": "Convite do rodapé",
+              "widget": "string"
+            },
+            {
+              "name": "invitationHighlight",
+              "label": "Convite: trecho destacado",
+              "widget": "string"
+            },
+            {
+              "name": "copyrightName",
+              "label": "Nome no copyright",
+              "widget": "string"
+            },
+            {
+              "name": "footerNote",
+              "label": "Frase final",
+              "widget": "string"
+            },
+            {
+              "name": "navigation",
+              "label": "Menu principal",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Texto",
+                  "widget": "string"
+                },
+                {
+                  "name": "to",
+                  "label": "Destino",
+                  "widget": "string",
+                  "pattern": [
+                    "^/(?!/)[^\\s]*$",
+                    "Informe um caminho interno, como /eventos."
+                  ]
+                }
+              ],
+              "summary": "{{fields.label}}",
+              "min": 1
+            },
+            {
+              "name": "footerNavigation",
+              "label": "Menu do rodapé",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Texto",
+                  "widget": "string"
+                },
+                {
+                  "name": "to",
+                  "label": "Destino",
+                  "widget": "string",
+                  "pattern": [
+                    "^/(?!/)[^\\s]*$",
+                    "Informe um caminho interno, como /eventos."
+                  ]
+                }
+              ],
+              "summary": "{{fields.label}}",
+              "min": 1
+            },
+            {
+              "name": "channels",
+              "label": "Redes e canais",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Nome",
+                  "widget": "string"
+                },
+                {
+                  "name": "url",
+                  "label": "Endereço",
+                  "widget": "string",
+                  "required": true,
+                  "pattern": [
+                    "^https?://[^\\s]+$",
+                    "Informe uma URL http:// ou https:// válida."
+                  ]
+                }
+              ],
+              "summary": "{{fields.name}}"
+            },
+            {
+              "name": "partners",
+              "label": "Parceiros",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Nome",
+                  "widget": "string"
+                },
+                {
+                  "name": "image",
+                  "label": "Logotipo",
+                  "widget": "image",
+                  "choose_url": false,
+                  "media_library": {
+                    "allow_multiple": false,
+                    "config": {
+                      "max_file_size": 5242880
+                    }
+                  }
+                },
+                {
+                  "name": "url",
+                  "label": "Site",
+                  "widget": "string",
+                  "required": true,
+                  "pattern": [
+                    "^https?://[^\\s]+$",
+                    "Informe uma URL http:// ou https:// válida."
+                  ]
+                },
+                {
+                  "name": "wide",
+                  "label": "Logotipo largo",
+                  "widget": "boolean",
+                  "default": false
+                }
+              ],
+              "summary": "{{fields.name}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inicio",
+      "label": "Página inicial",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "home",
+          "label": "Apresentação, textos e indicadores",
+          "file": "src/content/home.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "hero",
+              "label": "Apresentação principal",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "Chamada superior",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "firstWord",
+                  "label": "Primeira palavra animada",
+                  "widget": "string"
+                },
+                {
+                  "name": "finalWord",
+                  "label": "Palavra final animada",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Descrição",
+                  "widget": "text"
+                },
+                {
+                  "name": "primaryLabel",
+                  "label": "Texto do botão principal",
+                  "widget": "string"
+                },
+                {
+                  "name": "primaryLink",
+                  "label": "Destino do botão principal",
+                  "widget": "string",
+                  "pattern": [
+                    "^/(?!/)[^\\s]*$",
+                    "Informe um caminho interno, como /eventos."
+                  ]
+                },
+                {
+                  "name": "secondaryLabel",
+                  "label": "Texto do segundo link",
+                  "widget": "string"
+                },
+                {
+                  "name": "secondaryLink",
+                  "label": "Destino do segundo link",
+                  "widget": "string",
+                  "pattern": [
+                    "^/(?!/)[^\\s]*$",
+                    "Informe um caminho interno, como /eventos."
+                  ]
+                },
+                {
+                  "name": "imageLabel",
+                  "label": "Legenda sobre a foto",
+                  "widget": "string"
+                },
+                {
+                  "name": "caption",
+                  "label": "Legenda: primeira linha",
+                  "widget": "string"
+                },
+                {
+                  "name": "captionHighlight",
+                  "label": "Legenda: destaque",
+                  "widget": "string"
+                },
+                {
+                  "name": "photos",
+                  "label": "Fotografias",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "src",
+                      "label": "Imagem",
+                      "widget": "image",
+                      "choose_url": false,
+                      "media_library": {
+                        "allow_multiple": false,
+                        "config": {
+                          "max_file_size": 5242880
+                        }
+                      }
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Descrição acessível",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "width",
+                      "label": "Largura original",
+                      "widget": "number",
+                      "value_type": "int",
+                      "min": 1
+                    },
+                    {
+                      "name": "height",
+                      "label": "Altura original",
+                      "widget": "number",
+                      "value_type": "int",
+                      "min": 1
+                    },
+                    {
+                      "name": "fit",
+                      "label": "Enquadramento",
+                      "widget": "select",
+                      "options": [
+                        {
+                          "label": "Fotografia",
+                          "value": "default"
+                        },
+                        {
+                          "label": "Captura de encontro online",
+                          "value": "online"
+                        }
+                      ],
+                      "default": "default"
+                    }
+                  ],
+                  "summary": "{{fields.alt}}",
+                  "min": 1
+                },
+                {
+                  "name": "institutions",
+                  "label": "Instituições",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "label": "Nome",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "image",
+                      "label": "Logotipo",
+                      "widget": "image",
+                      "choose_url": false,
+                      "media_library": {
+                        "allow_multiple": false,
+                        "config": {
+                          "max_file_size": 5242880
+                        }
+                      }
+                    },
+                    {
+                      "name": "url",
+                      "label": "Site",
+                      "widget": "string",
+                      "required": true,
+                      "pattern": [
+                        "^https?://[^\\s]+$",
+                        "Informe uma URL http:// ou https:// válida."
+                      ]
+                    },
+                    {
+                      "name": "wide",
+                      "label": "Logotipo largo",
+                      "widget": "boolean",
+                      "default": false
+                    }
+                  ],
+                  "summary": "{{fields.name}}"
+                }
+              ]
+            },
+            {
+              "name": "about",
+              "label": "Sobre o projeto",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "Chamada",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Título: primeira linha",
+                  "widget": "string"
+                },
+                {
+                  "name": "highlight",
+                  "label": "Palavra destacada",
+                  "widget": "string"
+                },
+                {
+                  "name": "titleEnd",
+                  "label": "Final do título",
+                  "widget": "string"
+                },
+                {
+                  "name": "odsLabel",
+                  "label": "Legenda do ODS",
+                  "widget": "string"
+                },
+                {
+                  "name": "odsLink",
+                  "label": "Link do ODS",
+                  "widget": "string",
+                  "required": true,
+                  "pattern": [
+                    "^https?://[^\\s]+$",
+                    "Informe uma URL http:// ou https:// válida."
+                  ]
+                },
+                {
+                  "name": "odsImage",
+                  "label": "Imagem do ODS",
+                  "widget": "image",
+                  "choose_url": false,
+                  "media_library": {
+                    "allow_multiple": false,
+                    "config": {
+                      "max_file_size": 5242880
+                    }
+                  }
+                },
+                {
+                  "name": "odsAlt",
+                  "label": "Descrição acessível do ODS",
+                  "widget": "string"
+                },
+                {
+                  "name": "lead",
+                  "label": "Apresentação",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraphs",
+                  "label": "Parágrafos",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "text",
+                      "label": "Texto",
+                      "widget": "text"
+                    }
+                  ],
+                  "summary": "{{fields.text}}"
+                },
+                {
+                  "name": "disclosureTitle",
+                  "label": "Título do texto expansível",
+                  "widget": "string"
+                },
+                {
+                  "name": "disclosureText",
+                  "label": "Texto expansível",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "objectives",
+              "label": "Objetivos",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "Chamada",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "text"
+                },
+                {
+                  "name": "description",
+                  "label": "Introdução",
+                  "widget": "text"
+                },
+                {
+                  "name": "items",
+                  "label": "Objetivos",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Título",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Descrição",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "link",
+                      "label": "Destino",
+                      "widget": "string",
+                      "pattern": [
+                        "^/(?!/)[^\\s]*$",
+                        "Informe um caminho interno, como /eventos."
+                      ]
+                    },
+                    {
+                      "name": "action",
+                      "label": "Texto do link",
+                      "widget": "string"
+                    }
+                  ],
+                  "summary": "{{fields.title}}"
+                }
+              ]
+            },
+            {
+              "name": "courses",
+              "label": "Chamada dos cursos",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "Chamada",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "intro",
+                  "label": "Introdução",
+                  "widget": "text"
+                },
+                {
+                  "name": "allLabel",
+                  "label": "Texto do link para eventos",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "knowledge",
+              "label": "Chamada dos artigos",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "eyebrow",
+                  "label": "Chamada",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "allLabel",
+                  "label": "Texto do link para artigos",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "metrics",
+              "label": "Indicadores manuais",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "value",
+                  "label": "Valor",
+                  "widget": "string"
+                },
+                {
+                  "name": "label",
+                  "label": "Descrição",
+                  "widget": "string"
+                }
+              ],
+              "summary": "{{fields.label}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "equipe",
+      "label": "Equipe",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "team",
+          "label": "Integrantes e apresentação",
+          "file": "src/content/team.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "eyebrow",
+              "label": "Chamada",
+              "widget": "string"
+            },
+            {
+              "name": "title",
+              "label": "Título",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Introdução",
+              "widget": "text"
+            },
+            {
+              "name": "members",
+              "label": "Integrantes",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Nome",
+                  "widget": "string"
+                },
+                {
+                  "name": "role",
+                  "label": "Função",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "photo",
+                  "label": "Foto",
+                  "widget": "image",
+                  "choose_url": false,
+                  "media_library": {
+                    "allow_multiple": false,
+                    "config": {
+                      "max_file_size": 5242880
+                    }
+                  }
+                },
+                {
+                  "name": "photoPosition",
+                  "label": "Enquadramento (ex.: center 58%)",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "linkedin",
+                  "label": "LinkedIn",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": [
+                    "^https?://[^\\s]+$",
+                    "Informe uma URL http:// ou https:// válida."
+                  ]
+                },
+                {
+                  "name": "lattes",
+                  "label": "Lattes",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": [
+                    "^https?://[^\\s]+$",
+                    "Informe uma URL http:// ou https:// válida."
+                  ]
+                }
+              ],
+              "summary": "{{fields.name}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eventos",
+      "label": "Eventos",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "upcoming",
+          "label": "Agenda de eventos",
+          "file": "src/content/events/upcomingEvents.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "events",
+              "label": "Eventos",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "ID (único; preserve os existentes)",
+                  "widget": "number",
+                  "value_type": "int",
+                  "min": 1
+                },
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "date",
+                  "label": "Datas dos encontros (texto)",
+                  "widget": "string"
+                },
+                {
+                  "name": "endDate",
+                  "label": "Último dia do evento (move automaticamente para anteriores)",
+                  "widget": "datetime",
+                  "format": "YYYY-MM-DD",
+                  "date_format": "DD/MM/YYYY",
+                  "time_format": false,
+                  "required": false
+                },
+                {
+                  "name": "time",
+                  "label": "Horário",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "description",
+                  "label": "Descrição",
+                  "widget": "text"
+                },
+                {
+                  "name": "location",
+                  "label": "Local",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "registrationPeriod",
+                  "label": "Texto do período de inscrição",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "name": "registrationStatus",
+                  "label": "Situação das inscrições",
+                  "widget": "select",
+                  "default": "soon",
+                  "options": [
+                    {
+                      "label": "Em breve",
+                      "value": "soon"
+                    },
+                    {
+                      "label": "Abertas",
+                      "value": "open"
+                    },
+                    {
+                      "label": "Encerradas",
+                      "value": "closed"
+                    }
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "registrationDeadline",
+                  "label": "Último dia de inscrição",
+                  "widget": "datetime",
+                  "format": "YYYY-MM-DD",
+                  "date_format": "DD/MM/YYYY",
+                  "time_format": false,
+                  "required": false
+                },
+                {
+                  "name": "link",
+                  "label": "Link de inscrição",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": [
+                    "^https?://[^\\s]+$",
+                    "Informe uma URL http:// ou https:// válida."
+                  ]
+                },
+                {
+                  "name": "registrations",
+                  "label": "Quantidade de inscritos",
+                  "widget": "number",
+                  "value_type": "int",
+                  "min": 0,
+                  "required": false
+                }
+              ],
+              "summary": "{{fields.title}}"
+            }
+          ]
+        },
+        {
+          "name": "past",
+          "label": "Acervo de eventos anteriores",
+          "file": "src/content/events/pastEvents.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "events",
+              "label": "Eventos",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "ID (único; preserve os existentes)",
+                  "widget": "number",
+                  "value_type": "int",
+                  "min": 1
+                },
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "date",
+                  "label": "Datas dos encontros (texto)",
+                  "widget": "string"
+                },
+                {
+                  "name": "endDate",
+                  "label": "Último dia do evento (move automaticamente para anteriores)",
+                  "widget": "datetime",
+                  "format": "YYYY-MM-DD",
+                  "date_format": "DD/MM/YYYY",
+                  "time_format": false,
+                  "required": false
+                },
+                {
+                  "name": "time",
+                  "label": "Horário",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "description",
+                  "label": "Descrição",
+                  "widget": "text"
+                },
+                {
+                  "name": "location",
+                  "label": "Local",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "registrationPeriod",
+                  "label": "Texto do período de inscrição",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "name": "registrationStatus",
+                  "label": "Situação das inscrições",
+                  "widget": "select",
+                  "default": "soon",
+                  "options": [
+                    {
+                      "label": "Em breve",
+                      "value": "soon"
+                    },
+                    {
+                      "label": "Abertas",
+                      "value": "open"
+                    },
+                    {
+                      "label": "Encerradas",
+                      "value": "closed"
+                    }
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "registrationDeadline",
+                  "label": "Último dia de inscrição",
+                  "widget": "datetime",
+                  "format": "YYYY-MM-DD",
+                  "date_format": "DD/MM/YYYY",
+                  "time_format": false,
+                  "required": false
+                },
+                {
+                  "name": "link",
+                  "label": "Link de inscrição",
+                  "widget": "string",
+                  "required": false,
+                  "pattern": [
+                    "^https?://[^\\s]+$",
+                    "Informe uma URL http:// ou https:// válida."
+                  ]
+                },
+                {
+                  "name": "registrations",
+                  "label": "Quantidade de inscritos",
+                  "widget": "number",
+                  "value_type": "int",
+                  "min": 0,
+                  "required": false
+                }
+              ],
+              "summary": "{{fields.title}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "artigos",
+      "label": "Artigos científicos",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "articles",
+          "label": "Publicações",
+          "file": "src/content/articles/artigos.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "articles",
+              "label": "Artigos",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "ID (único; preserve os existentes)",
+                  "widget": "number",
+                  "value_type": "int",
+                  "min": 1
+                },
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "author",
+                  "label": "Autores",
+                  "widget": "string"
+                },
+                {
+                  "name": "date",
+                  "label": "Ano",
+                  "widget": "string",
+                  "pattern": [
+                    "^\\d{4}$",
+                    "Informe um ano com quatro dígitos."
+                  ]
+                },
+                {
+                  "name": "venue",
+                  "label": "Conferência ou revista",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "summary",
+                  "label": "Resumo",
+                  "widget": "text"
+                },
+                {
+                  "name": "link",
+                  "label": "Publicação original",
+                  "widget": "string",
+                  "required": true,
+                  "pattern": [
+                    "^https?://[^\\s]+$",
+                    "Informe uma URL http:// ou https:// válida."
+                  ]
+                }
+              ],
+              "summary": "{{fields.title}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "servicos",
+      "label": "Serviços",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "services",
+          "label": "Serviços realizados",
+          "file": "src/content/services/servicos.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "services",
+              "label": "Serviços",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Projeto",
+                  "widget": "string"
+                },
+                {
+                  "name": "date",
+                  "label": "Ano",
+                  "widget": "string",
+                  "pattern": [
+                    "^\\d{4}$",
+                    "Informe um ano com quatro dígitos."
+                  ]
+                },
+                {
+                  "name": "description",
+                  "label": "Descrição",
+                  "widget": "text"
+                }
+              ],
+              "summary": "{{fields.title}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "paginas",
+      "label": "Textos das páginas",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "pages",
+          "label": "Eventos, artigos e serviços",
+          "file": "src/content/pages.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "events",
+              "label": "Eventos",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Introdução",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "articles",
+              "label": "Artigos",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Introdução",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "services",
+              "label": "Serviços",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Título",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Introdução",
+                  "widget": "text"
+                },
+                {
+                  "name": "contactTitle",
+                  "label": "Título do convite",
+                  "widget": "string"
+                },
+                {
+                  "name": "contactText",
+                  "label": "Descrição do convite",
+                  "widget": "text"
+                },
+                {
+                  "name": "contactLabel",
+                  "label": "Texto do link de contato",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

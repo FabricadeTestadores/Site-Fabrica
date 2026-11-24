@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
+import home from '../../content/home.json';
 
-const firstWord = 'projetos.';
-const finalWord = 'pessoas.';
+const { firstWord, finalWord } = home.hero;
 const motionQuery = '(prefers-reduced-motion: reduce)';
 const frames = [
   { text: '', delay: 900 },

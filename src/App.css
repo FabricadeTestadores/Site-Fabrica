@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700;750&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
+.content-lines { white-space: pre-line; }
+
 :root {
   color-scheme: light;
   --primary:#b74716; --primary-hover:#963810; --secondary:#17313d; --accent:#f79542;

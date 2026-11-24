@@ -1,56 +1,58 @@
-[
-  {
-    "id": 7,
-    "title": "Introdução às Técnicas e Ferramentas para Testes de Segurança",
-    "date": "28 de setembro a 07 de outubro de 2026",
-    "description": "O curso apresentou uma introdução aos principais conceitos de testes de segurança, combinando fundamentos teóricos com atividades práticas. Ao longo dos encontros, foram utilizadas ferramentas como Nmap, Wireshark e JMeter para abordar reconhecimento de redes, análise de tráfego e testes de desempenho em ambientes controlados.\n\nO cronograma contou com aulas nos dias 28/09, 30/09, 02/10 e 05/10, além de uma atividade final no dia 07/10, composta por um CTF com cenários práticos e pelo encontro de encerramento e integração dos conteúdos."
-  },
-  {
-    "id": 1,
-    "title": "CTFL V.2",
-    "registrations": 72,
-    "date": "2026 ",
-    "description": "A Fábrica de Testadores, projeto de extensão do GESAD/UECE, convida todos os interessados na área de testes de software e na certificação CTFL para o Minicurso gratuito: “Curso preparatorio CTFL V.4”.",
-    "location": "Youtube / Fabrica de testadores"
-  },
-  {
-    "id": 2,
-    "title": "Introdução a Teste de Segurança",
-    "registrations": 23,
-    "date": "2025",
-    "description": "Minicurso apresentando uma introdução aos testes de segurança e a aplicação de CTF (Capture The Flag).",
-    "location": "LABCOMP - UECE"
-  },
-  {
-    "id": 3,
-    "title": "CTFL",
-    "registrations": 112,
-    "date": "2025",
-    "description": "Curso de capacitação em testes de software para certificação CTFL.",
-    "location": "Youtube - Fabrica de Testadores"
-  },
-  {
-    "id": 4,
-    "title": "Testes Exploratórios",
-    "registrations": 15,
-    "date": "2024",
-    "description": "Apresentação dos conceitos e práticas de testes exploratórios em software.",
-    "location": "LABCOMP - UECE"
-  },
-  {
-    "id": 5,
-    "title": "Testes Manuais",
-    "registrations": 19,
-    "date": "2024",
-    "description": "Curso introdutório sobre conceitos e técnicas de testes manuais em software.",
-    "location": "LABCOMP - UECE"
-  },
-  {
-    "id": 6,
-    "title": "Testes Unitários e Testes de API",
-    "registrations": 21,
-    "date": "2024",
-    "description": "Curso introdutório sobre testes unitários e testes de API.",
-    "location": "LABCOMP - UECE"
-  }
-]
+{
+  "events": [
+    {
+      "id": 7,
+      "title": "Introdução às Técnicas e Ferramentas para Testes de Segurança",
+      "date": "28 de setembro a 07 de outubro de 2026",
+      "description": "O curso apresentou uma introdução aos principais conceitos de testes de segurança, combinando fundamentos teóricos com atividades práticas. Ao longo dos encontros, foram utilizadas ferramentas como Nmap, Wireshark e JMeter para abordar reconhecimento de redes, análise de tráfego e testes de desempenho em ambientes controlados.\n\nO cronograma contou com aulas nos dias 28/09, 30/09, 02/10 e 05/10, além de uma atividade final no dia 07/10, composta por um CTF com cenários práticos e pelo encontro de encerramento e integração dos conteúdos."
+    },
+    {
+      "id": 1,
+      "title": "CTFL V.2",
+      "registrations": 72,
+      "date": "2026 ",
+      "description": "A Fábrica de Testadores, projeto de extensão do GESAD/UECE, convida todos os interessados na área de testes de software e na certificação CTFL para o Minicurso gratuito: “Curso preparatorio CTFL V.4”.",
+      "location": "Youtube / Fabrica de testadores"
+    },
+    {
+      "id": 2,
+      "title": "Introdução a Teste de Segurança",
+      "registrations": 23,
+      "date": "2025",
+      "description": "Minicurso apresentando uma introdução aos testes de segurança e a aplicação de CTF (Capture The Flag).",
+      "location": "LABCOMP - UECE"
+    },
+    {
+      "id": 3,
+      "title": "CTFL",
+      "registrations": 112,
+      "date": "2025",
+      "description": "Curso de capacitação em testes de software para certificação CTFL.",
+      "location": "Youtube - Fabrica de Testadores"
+    },
+    {
+      "id": 4,
+      "title": "Testes Exploratórios",
+      "registrations": 15,
+      "date": "2024",
+      "description": "Apresentação dos conceitos e práticas de testes exploratórios em software.",
+      "location": "LABCOMP - UECE"
+    },
+    {
+      "id": 5,
+      "title": "Testes Manuais",
+      "registrations": 19,
+      "date": "2024",
+      "description": "Curso introdutório sobre conceitos e técnicas de testes manuais em software.",
+      "location": "LABCOMP - UECE"
+    },
+    {
+      "id": 6,
+      "title": "Testes Unitários e Testes de API",
+      "registrations": 21,
+      "date": "2024",
+      "description": "Curso introdutório sobre testes unitários e testes de API.",
+      "location": "LABCOMP - UECE"
+    }
+  ]
+}

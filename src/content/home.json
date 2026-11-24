@@ -1,0 +1,117 @@
+{
+  "hero": {
+    "eyebrow": "Extensão universitária · UECE",
+    "title": "Qualidade de software começa com",
+    "firstWord": "projetos.",
+    "finalWord": "pessoas.",
+    "description": "Formamos pessoas em testes de software e conectamos conhecimento, pesquisa e prática para construir sistemas mais confiáveis.",
+    "primaryLabel": "Explore nossos eventos",
+    "primaryLink": "/eventos",
+    "secondaryLabel": "Conheça o projeto",
+    "secondaryLink": "/#about",
+    "imageLabel": "APRENDER. TESTAR. COMPARTILHAR.",
+    "caption": "Da universidade",
+    "captionHighlight": "para a prática.",
+    "photos": [
+      {
+        "src": "/Fabrica.jpeg",
+        "alt": "Apresentação presencial sobre extensão universitária em uma sala de aula.",
+        "width": 1200,
+        "height": 1600,
+        "fit": "default"
+      },
+      {
+        "src": "/fabrica2.jpeg",
+        "alt": "Encontro online da Fábrica de Testadores durante o curso preparatório para a certificação CTFL.",
+        "width": 1429,
+        "height": 752,
+        "fit": "online"
+      }
+    ],
+    "institutions": [
+      {
+        "name": "Universidade Estadual do Ceará",
+        "image": "/logo_uece.png",
+        "url": "https://www.uece.br/",
+        "wide": true
+      },
+      {
+        "name": "GESAD",
+        "image": "/logo_gesad.png",
+        "url": "https://gesaduece.com.br/pt",
+        "wide": false
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "O projeto",
+    "title": "Conhecimento aberto.",
+    "highlight": "Qualidade",
+    "titleEnd": "compartilhada.",
+    "odsLabel": "Objetivo da ODS relacionado",
+    "odsLink": "https://brasil.un.org/pt-br/sdgs/4",
+    "odsImage": "/ods-4-educacao-de-qualidade.svg",
+    "odsAlt": "ODS 4 — Educação de qualidade",
+    "lead": "Somos a Fábrica de Testadores, um projeto de extensão da Universidade Estadual do Ceará dedicado à formação em testes, segurança e qualidade de software.",
+    "paragraphs": [
+      {
+        "text": "Reunimos recursos da literatura, desenvolvemos materiais didáticos e oferecemos palestras e minicursos abertos à comunidade. Aproximamos estudantes e profissionais dos desafios reais da área."
+      },
+      {
+        "text": "Com verificação e validação de software, buscamos melhorar a confiabilidade, o desempenho e a experiência de quem usa os sistemas, reduzindo riscos e custos."
+      }
+    ],
+    "disclosureTitle": "Nosso compromisso com a educação",
+    "disclosureText": "Alinhado aos Objetivos de Desenvolvimento Sustentável da ONU, especialmente às metas 4.3 e 4.4, o projeto promove a igualdade de acesso à educação técnica, profissional e superior de qualidade, a preços acessíveis. Também busca ampliar as competências de jovens e adultos para o emprego, o trabalho decente e o empreendedorismo até 2030."
+  },
+  "objectives": {
+    "eyebrow": "O que nos move",
+    "title": "Aprender fazendo.\nE fazer a diferença.",
+    "description": "Três frentes que aproximam a universidade,\no mercado e a comunidade.",
+    "items": [
+      {
+        "title": "Formar pessoas",
+        "text": "Desenvolver competências em testes de software com cursos, minicursos e experiências práticas.",
+        "link": "/eventos",
+        "action": "Conheça os eventos"
+      },
+      {
+        "title": "Compartilhar conhecimento",
+        "text": "Disseminar teoria e prática sobre qualidade e segurança de software, com materiais abertos à comunidade.",
+        "link": "/artigos",
+        "action": "Explore os artigos"
+      },
+      {
+        "title": "Conectar pesquisa e prática",
+        "text": "Publicar estudos científicos e aproximar a universidade de parceiros externos por meio de projetos reais.",
+        "link": "/servicos",
+        "action": "Veja os serviços"
+      }
+    ]
+  },
+  "courses": {
+    "eyebrow": "Nossa agenda",
+    "title": "Seu próximo passo começa aqui.",
+    "intro": "Conheça os próximos cursos da Fábrica de Testadores.",
+    "allLabel": "Ver programação completa"
+  },
+  "knowledge": {
+    "eyebrow": "Continue explorando",
+    "title": "Conhecimento em movimento.",
+    "allLabel": "Todos os artigos"
+  },
+  "metrics": [
+    {
+      "value": "200+",
+      "label": "pessoas impactadas"
+    },
+    {
+      "value": "05",
+      "label": "softwares impactados"
+    },
+    {
+      "value": "06",
+      "label": "cursos oferecidos"
+    }
+  ]
+}

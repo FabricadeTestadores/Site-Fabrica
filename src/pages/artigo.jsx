@@ -1,7 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import { Arrow, ExternalLink } from '../Components/UI';
-import articles from '../content/articles/artigos.json';
+import articlesData from '../content/articles/artigos.json';
 import './artigo.css';
+const articles = articlesData.articles;
 
 export default function Artigo() {
   const { id } = useParams();

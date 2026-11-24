@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import articles from '../../content/articles/artigos.json';
+import articlesData from '../../content/articles/artigos.json';
 import { Arrow, PageIntro } from '../UI';
+import pages from '../../content/pages.json';
 import './styles.css';
+const articles = articlesData.articles;
 
 const normalize = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR');
 export default function Articles() {
@@ -12,7 +14,7 @@ export default function Articles() {
   const results = [...articles].filter((article) => (!year || article.date === year) && normalize(`${article.title} ${article.author} ${article.summary}`).includes(normalize(query.trim()))).sort((a, b) => Number(b.date) - Number(a.date));
   return (
     <>
-      <PageIntro label="Artigos" title="Pesquisa que amplia a prática.">Explore os artigos científicos do grupo sobre testes, segurança e qualidade de software.</PageIntro>
+      <PageIntro label="Artigos" title={pages.articles.title}>{pages.articles.description}</PageIntro>
       <section className="container content-section" aria-label="Artigos científicos">
         <div className="results-toolbar">
           <div className="article-filters">

@@ -1,0 +1,6 @@
+body { margin: 0; background: #f7f5f0; color: #17313d; font: 16px/1.6 system-ui, sans-serif; }
+.setup { max-width: 560px; margin: 12vh auto; padding: 32px; background: white; border-top: 4px solid #b74716; border-radius: 8px; }
+.setup h1 { font-size: 26px; line-height: 1.25; }
+.setup a { color: #963810; text-underline-offset: 3px; }
+[hidden] { display: none !important; }
+@media (max-width: 620px) { .setup { margin: 32px 16px; padding: 24px; } }

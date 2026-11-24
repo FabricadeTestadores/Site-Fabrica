@@ -63,7 +63,7 @@ src/
 
 ### Pré-requisitos
 
-- [Node.js](https://nodejs.org/) (versão 18+)
+- [Node.js](https://nodejs.org/) (versão 22.12+ ou 24+; consulte `.nvmrc`)
 - npm
 
 ### Instalação
@@ -90,6 +90,10 @@ O servidor será iniciado em `http://localhost:5173`.
 ---
 
 ## Deploy
+
+O projeto está preparado para publicação automática a cada push na `main`, usando GitHub Actions e validação de conteúdo. Ative **GitHub Actions** em **Settings → Pages → Source**. Veja o [guia do CMS](docs/CMS.md) para configurar o login.
+
+### Alternativa manual
 
 O deploy é feito automaticamente para o GitHub Pages com o comando abaixo. Ele executa o build e publica o conteúdo da pasta `dist` no branch `gh-pages`.
 
@@ -121,6 +125,10 @@ npm run deploy
 ---
 
 ## Como Atualizar Conteúdo
+
+O painel Decap fica em `/admin/` e permite editar eventos, artigos, serviços, equipe, contatos, imagens, parceiros, menus e textos institucionais. O login de produção depende do OAuth descrito no [guia completo](docs/CMS.md). Para testar sem OAuth, rode `npm run dev` e `npm run cms:local` em terminais separados e abra `http://localhost:5173/admin/?local=true`.
+
+Publicações no painel geram commits e, após ativar o Actions, atualizam o site automaticamente. As listas dos JSON agora ficam nas propriedades `events`, `articles` e `services`.
 
 Eventos e artigos são gerenciados via arquivos JSON — sem necessidade de mexer no código dos componentes.
 

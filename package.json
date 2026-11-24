@@ -5,12 +5,22 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "npm run cms:config",
     "dev": "vite",
+    "prebuild": "npm run content:validate",
     "build": "vite build",
+    "postbuild": "node scripts/configure-cms.mjs",
+    "cms:config": "node scripts/configure-cms.mjs --source",
+    "cms:local": "decap-server",
+    "content:validate": "node scripts/validate-content.mjs",
+    "test": "node --test scripts/content.test.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
+  },
+  "engines": {
+    "node": "^22.12.0 || >=24.0.0"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -22,6 +32,7 @@
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
+    "decap-server": "3.11.6",
     "eslint": "^9.33.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",

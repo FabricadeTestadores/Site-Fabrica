@@ -1,5 +1,6 @@
 import "./styles.css";
 import postcardIcon from "/postcard-icon.svg";
+import site from '../../content/site.json';
 
 export default function Contacts() {
   return (
@@ -14,10 +15,10 @@ export default function Contacts() {
             </div>
             <div className="contact-info">
               <a
-                href="mailto:fabrica.testadores@uece.br"
+                href={`mailto:${site.email}`}
                 className="contact-link"
               >
-                fabrica.testadores@uece.br
+                {site.email}
               </a>
             </div>
           </div>
@@ -46,11 +47,7 @@ export default function Contacts() {
               </svg>
             </div>
             <div className="contact-info">
-              <p className="contact-address">
-                Rua Av. Dr. Silas Munguba, 1700 - Itaperi, Fortaleza - CE,
-                <br />
-                60714-903
-              </p>
+              <p className="contact-address content-lines">{site.address}</p>
             </div>
           </div>
         </div>

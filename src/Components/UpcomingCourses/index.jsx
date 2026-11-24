@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import upcomingEvents from '../../content/events/upcomingEvents.json';
+import { getEvents, registrationIsOpen, registrationMessage } from '../../content/events';
+import home from '../../content/home.json';
 import { Arrow, ExternalLink } from '../UI';
 import './styles.css';
 
@@ -10,27 +11,28 @@ function CourseIcon({ type }) {
 }
 
 export default function UpcomingCourses() {
-  const nextEvents = upcomingEvents.slice(0, 2);
+  const nextEvents = getEvents().upcomingEvents.slice(0, 2);
 
   return (
     <section id="proximos-cursos" className="section courses-preview" tabIndex={-1} aria-labelledby="courses-heading">
       <div className="container">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Nossa agenda</p>
-            <h2 id="courses-heading">Seu próximo passo começa aqui.</h2>
-            <p className="courses-intro">Conheça os próximos cursos da Fábrica de Testadores.</p>
+            <p className="eyebrow">{home.courses.eyebrow}</p>
+            <h2 id="courses-heading">{home.courses.title}</h2>
+            <p className="courses-intro">{home.courses.intro}</p>
           </div>
-          <Link className="text-link" to="/eventos">Ver programação completa <Arrow /></Link>
+          <Link className="text-link" to="/eventos">{home.courses.allLabel} <Arrow /></Link>
         </div>
         {nextEvents.length ? <div className="courses-grid">
           {nextEvents.map((event, index) => {
-            const [summary, registrationPeriod] = event.description.split('\n\n');
+            const summary = event.description;
+            const registrationPeriod = event.registrationPeriod;
             return (
               <article className="course-card" key={event.id} aria-labelledby={`course-title-${event.id}`}>
                 <div className="course-card-top">
                   <span className="course-label">Curso · {String(index + 1).padStart(2, '0')}</span>
-                  {event.link && <span className="course-registration-status">Inscrições abertas</span>}
+                  {registrationIsOpen(event) && <span className="course-registration-status">Inscrições abertas</span>}
                 </div>
                 <h3 id={`course-title-${event.id}`}>{event.title}</h3>
                 <p className="course-summary">{summary}</p>
@@ -50,7 +52,7 @@ export default function UpcomingCourses() {
                 </dl>
                 <div className="course-card-footer">
                   {registrationPeriod && <p className="course-registration-period">{registrationPeriod}</p>}
-                  {event.link ? <ExternalLink className="button button-primary course-enroll" href={event.link}>Inscrever-se<span className="sr-only"> em {event.title}</span></ExternalLink> : <p className="course-registration-period">Inscrições em breve. Acompanhe nossos canais.</p>}
+                  {registrationIsOpen(event) ? <ExternalLink className="button button-primary course-enroll" href={event.link}>Inscrever-se<span className="sr-only"> em {event.title}</span></ExternalLink> : <p className="course-registration-period">{registrationMessage(event)}</p>}
                 </div>
               </article>
             );

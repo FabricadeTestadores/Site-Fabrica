@@ -1,0 +1,17 @@
+{
+  "events": {
+    "title": "Aprenda com a comunidade.",
+    "description": "Cursos, minicursos e encontros para aproximar você da prática em testes e qualidade de software."
+  },
+  "articles": {
+    "title": "Pesquisa que amplia a prática.",
+    "description": "Explore os artigos científicos do grupo sobre testes, segurança e qualidade de software."
+  },
+  "services": {
+    "title": "Testes aplicados a desafios reais.",
+    "description": "Conheça os serviços executados pela equipe e a contribuição dos testes para a qualidade de cada projeto.",
+    "contactTitle": "Vamos conversar sobre seu projeto?",
+    "contactText": "Entre em contato para conhecer o trabalho da Fábrica de Testadores.",
+    "contactLabel": "Fale com a equipe"
+  }
+}
